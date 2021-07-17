@@ -9,11 +9,14 @@ public class Main {
 //        System.out.println(robHouseRecursion(0, new int[]{1,4,3,5,100,101}, new int[7]));
 //        System.out.println(robHousesTopDownApproah(new int[]{1,4,3,5,100,101}));
 
-        System.out.println(longestSumSubsequence(new int[]{10,22,9,33,21,50,41,60,80,3}));
+//        System.out.println(longestIncreasingSubsequence(new int[]{10,22,9,33,21,50,41,60,80,3}));
+//        System.out.println(longestSumSubsequence(new int[]{10,22,9,33,21,50,41,60,80,3}));
+//        System.out.println(longestBitonicSeq(new int[]{10,22,9,33,21,50,41,60,80,3}));
+
 
     }
 
-    //-----------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------
     // OPTIMISED FIBONACCI METHOD. S.C - O(1), T.C - O(n)
     public static void fibonacci(int n) {
         int a = 0, b = 1, c = 0;
@@ -26,7 +29,7 @@ public class Main {
     }
 
 
-    //-----------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------
     // CLIMBING STAIRS PROBLEM(can climb 1 or 2 stairs at a time. Find the maximum number of ways to reach a stair)
     // SC - O(N^2) TC- O(N^2)
     public static int climbingStairsRecursion(int n) {
@@ -89,11 +92,20 @@ public class Main {
             if (dp[i] > maxLIS)
                 maxLIS = dp[i];
         }
+        for(int i=0; i<arr.length; ++i){
+            System.out.print(arr[i] + " ");
+        }
+        System.out.println();
+        for(int i=0; i<arr.length; ++i){
+            System.out.print(dp[i] + "  ");
+        }
+        System.out.println();
         return maxLIS;
     }
 
-    //-----------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------
     //LONGEST SUM SUBSEQUENCE -> Print the largest sum possible such that numbers are in increasing order
+    //SC - O(N), TC - O(N^2)
     public static int longestSumSubsequence(int[] arr) {
         int max = Integer.MIN_VALUE;
         int[] dp = new int[arr.length];
@@ -113,4 +125,63 @@ public class Main {
         return max;
 
     }
+//-----------------------------------------------------------------------------------
+    // LONGEST BITONIC SEQUENCE
+    public static int longestBitonicSeq(int[] arr){
+        int[] LIS = new int[arr.length];    //DP array to store Longest Increasing Seq. Array
+        int[] LDS = new int[arr.length];    //DP array to store Longest Decreasing Seq. Array
+        int maxBitonic = 0;
+
+        for(int i=0; i<arr.length; ++i){    //computing the LIS
+            int currMaxLis = 0;
+            for(int j=0; j<i; ++j){
+                if(arr[i] > arr[j]){
+                    if(LIS[j] > currMaxLis)
+                        currMaxLis = LIS[j];
+                }
+            }
+            LIS[i] = currMaxLis + 1;
+        }
+
+        for(int i=arr.length-1; i>=0; --i){    //computing the LDS
+            int currMaxLDS = 0;
+            for(int j=arr.length-1; j>i; --j){
+                if(arr[i] > arr[j]){
+                    if(LDS[j] > currMaxLDS)
+                        currMaxLDS = LDS[j];
+                }
+            }
+            LDS[i] = currMaxLDS + 1;
+        }
+
+        for(int i=0; i<arr.length; ++i){
+            if(LDS[i] + LIS[i] -1 > maxBitonic)
+                maxBitonic = LDS[i] + LIS[i] -1;
+        }
+
+        for(int i=0; i<arr.length; ++i){
+            System.out.print(arr[i] + " ");
+        }
+        System.out.println();
+
+
+        for(int i=0; i<arr.length; ++i){
+            System.out.print(LIS[i] + "  ");
+        }
+        System.out.println();
+
+        for(int i=0; i<arr.length; ++i){
+            System.out.print(LDS[i] + "  ");
+        }
+        System.out.println();
+        return maxBitonic;
+
+    }
+//-----------------------------------------------------------------------------------
+    /* MAX NO. OF NON-OVERLAPPING BRIDGE -> Given co-ordinates of bridges, find max no. of bridges that do no overlap
+       [6,2],[4,3], [2,6], [1,5] -> x,y co-ordinates.
+       ans -> 2
+    */
+
+    
 }
