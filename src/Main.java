@@ -15,11 +15,11 @@ public class Main {
 //        System.out.println(longestSumSubsequence(new int[]{10,22,9,33,21,50,41,60,80,3}));
 //        System.out.println(longestBitonicSeq(new int[]{10,22,9,33,21,50,41,60,80,3}));
 
-        System.out.println(nonOverlappingBridges(new int[][]{{6,2}, {4,3} , {2,6}, {1,5}}));
-
+//        System.out.println(nonOverlappingBridges(new int[][]{{6, 2}, {4, 3}, {2, 6}, {1, 5}}));
+        System.out.println(russianDoll(new int[][]{ {17,5},{26,18} , {25,34}, {48,84}, {63,72}, {42,86} }));
     }
 
-//-----------------------------------------------------------------------------------
+    //-----------------------------------------------------------------------------------
     // 1) OPTIMISED FIBONACCI METHOD. S.C - O(1), T.C - O(n)
     public static void fibonacci(int n) {
         int a = 0, b = 1, c = 0;
@@ -32,7 +32,7 @@ public class Main {
     }
 
 
-//-----------------------------------------------------------------------------------
+    //-----------------------------------------------------------------------------------
     // 2) CLIMBING STAIRS PROBLEM(can climb 1 or 2 stairs at a time. Find the maximum number of ways to reach a stair)
     // SC - O(N^2) TC- O(N^2)
     public static int climbingStairsRecursion(int n) {
@@ -95,18 +95,18 @@ public class Main {
             if (dp[i] > maxLIS)
                 maxLIS = dp[i];
         }
-        for(int i=0; i<arr.length; ++i){
+        for (int i = 0; i < arr.length; ++i) {
             System.out.print(arr[i] + " ");
         }
         System.out.println();
-        for(int i=0; i<arr.length; ++i){
+        for (int i = 0; i < arr.length; ++i) {
             System.out.print(dp[i] + "  ");
         }
         System.out.println();
         return maxLIS;
     }
 
-//-----------------------------------------------------------------------------------
+    //-----------------------------------------------------------------------------------
     // 5) LONGEST SUM SUBSEQUENCE -> Print the largest sum possible such that numbers are in increasing order
     //SC - O(N), TC - O(N^2)
     public static int longestSumSubsequence(int[] arr) {
@@ -128,68 +128,85 @@ public class Main {
         return max;
 
     }
-//-----------------------------------------------------------------------------------
+
+    //-----------------------------------------------------------------------------------
     // 6) LONGEST BITONIC SEQUENCE
-    public static int longestBitonicSeq(int[] arr){
+    public static int longestBitonicSeq(int[] arr) {
         int[] LIS = new int[arr.length];    //DP array to store Longest Increasing Seq. Array
         int[] LDS = new int[arr.length];    //DP array to store Longest Decreasing Seq. Array
         int maxBitonic = 0;
 
-        for(int i=0; i<arr.length; ++i){    //computing the LIS
+        for (int i = 0; i < arr.length; ++i) {    //computing the LIS
             int currMaxLis = 0;
-            for(int j=0; j<i; ++j){
-                if(arr[i] > arr[j]){
-                    if(LIS[j] > currMaxLis)
+            for (int j = 0; j < i; ++j) {
+                if (arr[i] > arr[j]) {
+                    if (LIS[j] > currMaxLis)
                         currMaxLis = LIS[j];
                 }
             }
             LIS[i] = currMaxLis + 1;
         }
 
-        for(int i=arr.length-1; i>=0; --i){    //computing the LDS
+        for (int i = arr.length - 1; i >= 0; --i) {    //computing the LDS
             int currMaxLDS = 0;
-            for(int j=arr.length-1; j>i; --j){
-                if(arr[i] > arr[j]){
-                    if(LDS[j] > currMaxLDS)
+            for (int j = arr.length - 1; j > i; --j) {
+                if (arr[i] > arr[j]) {
+                    if (LDS[j] > currMaxLDS)
                         currMaxLDS = LDS[j];
                 }
             }
             LDS[i] = currMaxLDS + 1;
         }
 
-        for(int i=0; i<arr.length; ++i){
-            if(LDS[i] + LIS[i] -1 > maxBitonic)
-                maxBitonic = LDS[i] + LIS[i] -1;
+        for (int i = 0; i < arr.length; ++i) {
+            if (LDS[i] + LIS[i] - 1 > maxBitonic)
+                maxBitonic = LDS[i] + LIS[i] - 1;
         }
 
-        for(int i=0; i<arr.length; ++i){
+        for (int i = 0; i < arr.length; ++i) {
             System.out.print(arr[i] + " ");
         }
         System.out.println();
 
 
-        for(int i=0; i<arr.length; ++i){
+        for (int i = 0; i < arr.length; ++i) {
             System.out.print(LIS[i] + "  ");
         }
         System.out.println();
 
-        for(int i=0; i<arr.length; ++i){
+        for (int i = 0; i < arr.length; ++i) {
             System.out.print(LDS[i] + "  ");
         }
         System.out.println();
         return maxBitonic;
 
     }
-//-----------------------------------------------------------------------------------
+
+    //-----------------------------------------------------------------------------------
     /* 7) MAX NO. OF NON-OVERLAPPING BRIDGE -> Given co-ordinates of bridges, find max no. of bridges that do no overlap
        [6,2],[4,3], [2,6], [1,5] -> x,y co-ordinates.
        ans -> 2
     */
+    // SC- O(N), T.C- O(N^2)
+    public static int nonOverlappingBridges(int[][] arr) {
 
-    public static int nonOverlappingBridges(int[][] arr){
+        class Bridges implements Comparable<Bridges> {  //Personalised comparator to sort the bridges array using their north coordinate.
+            int north, south;
+
+            public Bridges(int north, int south) {
+                this.north = north;
+                this.south = south;
+            }
+
+            @Override
+            public int compareTo(Bridges bridge) {
+                return this.north - bridge.north;
+            }
+        }
+
         Bridges[] bridges = new Bridges[arr.length];
         int[] LIS = new int[arr.length];
-        for(int i=0; i<arr.length; ++i){
+        for (int i = 0; i < arr.length; ++i) {
             bridges[i] = new Bridges(arr[i][0], arr[i][1]);
         }
         Arrays.sort(bridges);
@@ -198,38 +215,66 @@ public class Main {
 //            System.out.println(bridges[i].north + " " + bridges[i].south);
 //        }
 //        System.out.println("=================");
-        for(int i=0; i<arr.length; ++i){
+        for (int i = 0; i < arr.length; ++i) {
             int currMax = 0;
-            for(int j=0; j<i; ++j){
-                if(bridges[i].south > bridges[j].south){
-                    if(LIS[j] > currMax)
+            for (int j = 0; j < i; ++j) {
+                if (bridges[i].south > bridges[j].south) {
+                    if (LIS[j] > currMax)
                         currMax = LIS[j];
                 }
             }
-            LIS[i] = currMax+1;
-            if(LIS[i] > nonOverlappingBridgesCount)
+            LIS[i] = currMax + 1;
+            if (LIS[i] > nonOverlappingBridgesCount)
                 nonOverlappingBridgesCount = LIS[i];
         }
         return nonOverlappingBridgesCount;
     }
 
-    public static class Bridges implements Comparable<Bridges>{
-        int north, south;
+//-----------------------------------------------------------------------------------
+    /* 8) RUSSIAN DOLL PROBLEM/ ENVELOPE PROBLEM -> Given the length and breadth of envelopes,
+            find the maximum number of envelopes that can be nested
+    */
+    public static int russianDoll(int[][] arr){
+        class RussianDoll implements Comparable<RussianDoll>{  //Personalised comparator to sort the dolls array using their first dimension.
+            int length, breadth;
 
-        public Bridges(int north, int south) {
-            this.north = north;
-            this.south = south;
+            public RussianDoll(int length, int breadth) {
+                this.length = length;
+                this.breadth = breadth;
+            }
+
+            @Override
+            public int compareTo(RussianDoll russianDoll) {
+                if(this.length == russianDoll.length) return this.breadth - russianDoll.breadth;
+                return this.length - russianDoll.length;
+            }
         }
 
-        @Override
-        public int compareTo(Bridges bridge) {
-            return this.north - bridge.north;
+        RussianDoll[] russianDolls = new RussianDoll[arr.length];
+        int[] LIS = new int[arr.length];
+        for (int i = 0; i < arr.length; ++i) {
+            russianDolls[i] = new RussianDoll(arr[i][0], arr[i][1]);
         }
-    }   //Personalised comparator to sort the bridges array using their
-                                                                      // north coordinate.
+        Arrays.sort(russianDolls);
+        int nestedDollsCount = 0;
+        for (int i = 0; i < arr.length; ++i) {
+            int currMax = 0;
+            for (int j = 0; j < i; ++j) {
+                if (russianDolls[i].breadth > russianDolls[j].breadth &&
+                        russianDolls[i].breadth > russianDolls[j].breadth) { //both dimensions should be strictly lower
+                    if (LIS[j] > currMax)
+                        currMax = LIS[j];
+                }
+            }
+            LIS[i] = currMax + 1;
+            if (LIS[i] > nestedDollsCount)
+                nestedDollsCount = LIS[i];
+        }
+        return nestedDollsCount;
+    }
 
 //-----------------------------------------------------------------------------------
-//-----------------------------------------------------------------------------------
+
 //-----------------------------------------------------------------------------------
 //-----------------------------------------------------------------------------------
 //-----------------------------------------------------------------------------------

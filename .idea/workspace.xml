@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="30a55ba3-6c87-41c0-9c01-34dd15964c60" name="Default" comment="" />
+    <list default="true" id="30a55ba3-6c87-41c0-9c01-34dd15964c60" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,8 +17,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1">
-              <caret line="110" column="28" lean-forward="true" selection-start-line="110" selection-start-column="28" selection-end-line="110" selection-end-column="28" />
+            <state relative-caret-position="238">
+              <caret line="18" column="108" lean-forward="true" selection-start-line="18" selection-start-column="108" selection-end-line="18" selection-end-column="108" />
               <folding>
                 <element signature="method#fibonacci#0;class#Main#0" />
                 <element signature="method#climbingStairsRecursion#0;class#Main#0" />
@@ -27,9 +29,9 @@
                 <element signature="method#longestSumSubsequence#0;class#Main#0" />
                 <element signature="method#longestBitonicSeq#0;class#Main#0" />
                 <element signature="method#nonOverlappingBridges#0;class#Main#0" />
-                <element signature="class#Bridges#0;class#Main#0" />
-                <element signature="e#6645#6646#0" expanded="true" />
-                <element signature="e#6695#6696#0" expanded="true" />
+                <element signature="e#7084#7085#0" expanded="true" />
+                <element signature="e#7148#7149#0" expanded="true" />
+                <element signature="method#russianDoll#0;class#Main#0" />
               </folding>
             </state>
           </provider>
@@ -204,9 +206,9 @@
             <element signature="method#longestSumSubsequence#0;class#Main#0" />
             <element signature="method#longestBitonicSeq#0;class#Main#0" />
             <element signature="method#nonOverlappingBridges#0;class#Main#0" />
-            <element signature="class#Bridges#0;class#Main#0" />
-            <element signature="e#6645#6646#0" expanded="true" />
-            <element signature="e#6695#6696#0" expanded="true" />
+            <element signature="e#7084#7085#0" expanded="true" />
+            <element signature="e#7148#7149#0" expanded="true" />
+            <element signature="method#russianDoll#0;class#Main#0" />
           </folding>
         </state>
       </provider>
@@ -225,9 +227,9 @@
             <element signature="method#longestSumSubsequence#0;class#Main#0" />
             <element signature="method#longestBitonicSeq#0;class#Main#0" />
             <element signature="method#nonOverlappingBridges#0;class#Main#0" />
-            <element signature="class#Bridges#0;class#Main#0" />
-            <element signature="e#6645#6646#0" expanded="true" />
-            <element signature="e#6695#6696#0" expanded="true" />
+            <element signature="e#7084#7085#0" expanded="true" />
+            <element signature="e#7148#7149#0" expanded="true" />
+            <element signature="method#russianDoll#0;class#Main#0" />
           </folding>
         </state>
       </provider>
@@ -245,8 +247,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1">
-          <caret line="110" column="28" lean-forward="true" selection-start-line="110" selection-start-column="28" selection-end-line="110" selection-end-column="28" />
+        <state relative-caret-position="238">
+          <caret line="18" column="108" lean-forward="true" selection-start-line="18" selection-start-column="108" selection-end-line="18" selection-end-column="108" />
           <folding>
             <element signature="method#fibonacci#0;class#Main#0" />
             <element signature="method#climbingStairsRecursion#0;class#Main#0" />
@@ -257,9 +259,9 @@
             <element signature="method#longestSumSubsequence#0;class#Main#0" />
             <element signature="method#longestBitonicSeq#0;class#Main#0" />
             <element signature="method#nonOverlappingBridges#0;class#Main#0" />
-            <element signature="class#Bridges#0;class#Main#0" />
-            <element signature="e#6645#6646#0" expanded="true" />
-            <element signature="e#6695#6696#0" expanded="true" />
+            <element signature="e#7084#7085#0" expanded="true" />
+            <element signature="e#7148#7149#0" expanded="true" />
+            <element signature="method#russianDoll#0;class#Main#0" />
           </folding>
         </state>
       </provider>
