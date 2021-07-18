@@ -1,6 +1,6 @@
 # Dynamic-Programming
-A single file containing various DP problems
-Path -> Dynamic-Programming\src\Main.java
+A single file containing various DP problems<br>
+Path -> Dynamic-Programming\src\Main.java<br>
 Problems in order in the source code ->
 
 1) Optimised Fibonacci
