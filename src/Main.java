@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -13,11 +15,12 @@ public class Main {
 //        System.out.println(longestSumSubsequence(new int[]{10,22,9,33,21,50,41,60,80,3}));
 //        System.out.println(longestBitonicSeq(new int[]{10,22,9,33,21,50,41,60,80,3}));
 
+        System.out.println(nonOverlappingBridges(new int[][]{{6,2}, {4,3} , {2,6}, {1,5}}));
 
     }
 
 //-----------------------------------------------------------------------------------
-    // OPTIMISED FIBONACCI METHOD. S.C - O(1), T.C - O(n)
+    // 1) OPTIMISED FIBONACCI METHOD. S.C - O(1), T.C - O(n)
     public static void fibonacci(int n) {
         int a = 0, b = 1, c = 0;
         for (int i = 2; i < n; ++i) {
@@ -30,7 +33,7 @@ public class Main {
 
 
 //-----------------------------------------------------------------------------------
-    // CLIMBING STAIRS PROBLEM(can climb 1 or 2 stairs at a time. Find the maximum number of ways to reach a stair)
+    // 2) CLIMBING STAIRS PROBLEM(can climb 1 or 2 stairs at a time. Find the maximum number of ways to reach a stair)
     // SC - O(N^2) TC- O(N^2)
     public static int climbingStairsRecursion(int n) {
         if (n == 0) return 0;
@@ -53,7 +56,7 @@ public class Main {
     }
 //-----------------------------------------------------------------------------------
 
-    //ROBBING HOUSES - Cannot rob two adjacent houses. Find max money that can be robbed.
+    // 3) ROBBING HOUSES - Cannot rob two adjacent houses. Find max money that can be robbed.
     public static int robHouseRecursion(int i, int[] arr, int[] strg) {
         if (i >= arr.length) return 0;
         if (strg[i] != 0) return strg[i];
@@ -76,7 +79,7 @@ public class Main {
 
 //-----------------------------------------------------------------------------------
 
-    //LONGEST INCREASING SUBSEQUENCE IN AN ARRAY
+    // 4) LONGEST INCREASING SUBSEQUENCE IN AN ARRAY
     public static int longestIncreasingSubsequence(int[] arr) {
         int[] dp = new int[arr.length];
         int maxLIS = 0;
@@ -104,7 +107,7 @@ public class Main {
     }
 
 //-----------------------------------------------------------------------------------
-    //LONGEST SUM SUBSEQUENCE -> Print the largest sum possible such that numbers are in increasing order
+    // 5) LONGEST SUM SUBSEQUENCE -> Print the largest sum possible such that numbers are in increasing order
     //SC - O(N), TC - O(N^2)
     public static int longestSumSubsequence(int[] arr) {
         int max = Integer.MIN_VALUE;
@@ -126,7 +129,7 @@ public class Main {
 
     }
 //-----------------------------------------------------------------------------------
-    // LONGEST BITONIC SEQUENCE
+    // 6) LONGEST BITONIC SEQUENCE
     public static int longestBitonicSeq(int[] arr){
         int[] LIS = new int[arr.length];    //DP array to store Longest Increasing Seq. Array
         int[] LDS = new int[arr.length];    //DP array to store Longest Decreasing Seq. Array
@@ -178,10 +181,56 @@ public class Main {
 
     }
 //-----------------------------------------------------------------------------------
-    /* MAX NO. OF NON-OVERLAPPING BRIDGE -> Given co-ordinates of bridges, find max no. of bridges that do no overlap
+    /* 7) MAX NO. OF NON-OVERLAPPING BRIDGE -> Given co-ordinates of bridges, find max no. of bridges that do no overlap
        [6,2],[4,3], [2,6], [1,5] -> x,y co-ordinates.
        ans -> 2
     */
 
-    
+    public static int nonOverlappingBridges(int[][] arr){
+        Bridges[] bridges = new Bridges[arr.length];
+        int[] LIS = new int[arr.length];
+        for(int i=0; i<arr.length; ++i){
+            bridges[i] = new Bridges(arr[i][0], arr[i][1]);
+        }
+        Arrays.sort(bridges);
+        int nonOverlappingBridgesCount = 0;
+//        for(int i=0; i<arr.length; ++i){
+//            System.out.println(bridges[i].north + " " + bridges[i].south);
+//        }
+//        System.out.println("=================");
+        for(int i=0; i<arr.length; ++i){
+            int currMax = 0;
+            for(int j=0; j<i; ++j){
+                if(bridges[i].south > bridges[j].south){
+                    if(LIS[j] > currMax)
+                        currMax = LIS[j];
+                }
+            }
+            LIS[i] = currMax+1;
+            if(LIS[i] > nonOverlappingBridgesCount)
+                nonOverlappingBridgesCount = LIS[i];
+        }
+        return nonOverlappingBridgesCount;
+    }
+
+    public static class Bridges implements Comparable<Bridges>{
+        int north, south;
+
+        public Bridges(int north, int south) {
+            this.north = north;
+            this.south = south;
+        }
+
+        @Override
+        public int compareTo(Bridges bridge) {
+            return this.north - bridge.north;
+        }
+    }   //Personalised comparator to sort the bridges array using their
+                                                                      // north coordinate.
+
+//-----------------------------------------------------------------------------------
+
+
+
+
 }

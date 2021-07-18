@@ -1,2 +1,12 @@
 # Dynamic-Programming
 A single file containing various DP problems
+Path -> Dynamic-Programming\src\Main.java
+Problems in order in the source code ->
+
+1) Optimised Fibonacci
+2) Climbing Stairs
+3) Adjacent Houses Robbing
+4) Longest Increasing Subsequence
+5) Longest Increasing Subsequence sum
+6) Longest Bitonic Sequence 
+7) Maximum Number of non-overlapping bridge
