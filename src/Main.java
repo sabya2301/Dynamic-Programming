@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.HashMap;
 
 public class Main {
 
@@ -9,17 +10,21 @@ public class Main {
 //        System.out.println(climbingStairsDP(10));
 
 //        System.out.println(robHouseRecursion(0, new int[]{1,4,3,5,100,101}, new int[7]));
-//        System.out.println(robHousesTopDownApproah(new int[]{1,4,3,5,100,101}));
+//        System.out.println(robHousesTopDownApproach(new int[]{1,4,3,5,100,101}));
 
 //        System.out.println(longestIncreasingSubsequence(new int[]{10,22,9,33,21,50,41,60,80,3}));
 //        System.out.println(longestSumSubsequence(new int[]{10,22,9,33,21,50,41,60,80,3}));
 //        System.out.println(longestBitonicSeq(new int[]{10,22,9,33,21,50,41,60,80,3}));
 
 //        System.out.println(nonOverlappingBridges(new int[][]{{6, 2}, {4, 3}, {2, 6}, {1, 5}}));
-        System.out.println(russianDoll(new int[][]{ {17,5},{26,18} , {25,34}, {48,84}, {63,72}, {42,86} }));
+//        System.out.println(russianDoll(new int[][]{ {17,5},{26,18} , {25,34}, {48,84}, {63,72}, {42,86} }));
+
+        System.out.println(palindromicSubstringCount("abccbc"));
+
+//        System.out.println(distinctSubstringCount("abcbac"));
     }
 
-    //-----------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------
     // 1) OPTIMISED FIBONACCI METHOD. S.C - O(1), T.C - O(n)
     public static void fibonacci(int n) {
         int a = 0, b = 1, c = 0;
@@ -31,8 +36,7 @@ public class Main {
         System.out.println(n + "-th fibonacci number is " + c);
     }
 
-
-    //-----------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------
     // 2) CLIMBING STAIRS PROBLEM(can climb 1 or 2 stairs at a time. Find the maximum number of ways to reach a stair)
     // SC - O(N^2) TC- O(N^2)
     public static int climbingStairsRecursion(int n) {
@@ -67,7 +71,7 @@ public class Main {
         return rob;
     }
 
-    public static int robHousesTopDownApproah(int[] arr) {
+    public static int robHousesTopDownApproach(int[] arr) {
         int[] strg = new int[arr.length + 1];
         strg[arr.length] = 0;
         strg[arr.length - 1] = arr[arr.length - 1];
@@ -106,7 +110,7 @@ public class Main {
         return maxLIS;
     }
 
-    //-----------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------
     // 5) LONGEST SUM SUBSEQUENCE -> Print the largest sum possible such that numbers are in increasing order
     //SC - O(N), TC - O(N^2)
     public static int longestSumSubsequence(int[] arr) {
@@ -129,7 +133,7 @@ public class Main {
 
     }
 
-    //-----------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------
     // 6) LONGEST BITONIC SEQUENCE
     public static int longestBitonicSeq(int[] arr) {
         int[] LIS = new int[arr.length];    //DP array to store Longest Increasing Seq. Array
@@ -182,7 +186,7 @@ public class Main {
 
     }
 
-    //-----------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------
     /* 7) MAX NO. OF NON-OVERLAPPING BRIDGE -> Given co-ordinates of bridges, find max no. of bridges that do no overlap
        [6,2],[4,3], [2,6], [1,5] -> x,y co-ordinates.
        ans -> 2
@@ -232,8 +236,8 @@ public class Main {
 
 //-----------------------------------------------------------------------------------
     /* 8) RUSSIAN DOLL PROBLEM/ ENVELOPE PROBLEM -> Given the length and breadth of envelopes,
-            find the maximum number of envelopes that can be nested
-    */
+            find the maximum number of envelopes that can be nested    */
+    // SC- O(N), T.C- O(N^2)
     public static int russianDoll(int[][] arr){
         class RussianDoll implements Comparable<RussianDoll>{  //Personalised comparator to sort the dolls array using their first dimension.
             int length, breadth;
@@ -274,9 +278,68 @@ public class Main {
     }
 
 //-----------------------------------------------------------------------------------
+    // 9) PALINDROMIC SUB-STRING
+    // SC- O(N^2), TC- O(N^2)
+    public static int palindromicSubstringCount(String str){
+        int[][] dp = new int[str.length()][str.length()];
+        int count = 0;
+        String palindromicString = "";
+        for(int g=0; g<str.length(); ++g){
+            for(int i=0, j=g; j<str.length(); ++i, ++j){
+                if(i==j){
+                    dp[i][j] = 1;
+                }
+
+                else if(str.charAt(i) == str.charAt(j)){
+                    if((j-i) == 1){
+                        dp[i][j] = 1;
+                    }
+                    else if(dp[i+1][j-1] == 1){
+                        dp[i][j] = 1;
+                    }
+                }
+                if(dp[i][j] == 1){
+                    count++;
+                    palindromicString += str.substring(i,j+1) + "\n";
+                }
+            }
+        }
+        for(int i=0; i<str.length(); ++i){
+            for(int j=0; j<str.length(); ++j){
+                System.out.print(dp[i][j] + " ");
+            }
+            System.out.println();
+        }
+
+        System.out.println(palindromicString);
+        return count;
+    }
 
 //-----------------------------------------------------------------------------------
+    /* 10) LEAST COSTLY PATH -> Given a 2D matrix, find the least costly path to move from top left corner to bottom left.
+           You can only move in horizontal or vertical path. Cost of a cell is its value. */
+
+    public static void leastCostlyPath(int[][] arr){
+        // will complete later :3
+    }
 //-----------------------------------------------------------------------------------
+    // 11) COUNT NUMBER OF DISTINCT SUBSTRINGS.
+    // TC - O(N), SC- O(N)
+    public static int distinctSubstringCount(String str){
+        int[] dp = new int[str.length()+1];
+        dp[0] = 1;
+        HashMap<Character, Integer> lastIndex = new HashMap<Character, Integer>();
+        for(int i=1; i<dp.length; ++i){
+            Character c = str.charAt(i-1);
+            if(lastIndex.containsKey(c)){
+                dp[i] = (2 * dp[i-1]) - dp[lastIndex.get(c)-1];
+            } else {
+                dp[i] = 2 * dp[i-1];
+            }
+            lastIndex.put(c,i);
+        }
+        return dp[dp.length-1];
+    }
 //-----------------------------------------------------------------------------------
 //-----------------------------------------------------------------------------------
 //-----------------------------------------------------------------------------------
