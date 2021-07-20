@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="30a55ba3-6c87-41c0-9c01-34dd15964c60" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -19,24 +18,44 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="-1007">
+              <caret line="33" column="7" lean-forward="true" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#fibonacci#0;class#Main#0" />
                 <element signature="method#climbingStairsRecursion#0;class#Main#0" />
                 <element signature="method#climbingStairsDP#0;class#Main#0" />
                 <element signature="method#robHouseRecursion#0;class#Main#0" />
-                <element signature="method#robHousesTopDownApproah#0;class#Main#0" />
+                <element signature="method#robHousesTopDownApproach#0;class#Main#0" />
                 <element signature="method#longestIncreasingSubsequence#0;class#Main#0" />
                 <element signature="method#longestSumSubsequence#0;class#Main#0" />
                 <element signature="method#longestBitonicSeq#0;class#Main#0" />
                 <element signature="method#nonOverlappingBridges#0;class#Main#0" />
                 <element signature="method#russianDoll#0;class#Main#0" />
-                <element signature="method#leastCostlyPath#0;class#Main#0" />
+                <element signature="method#palindromicSubstringCount#0;class#Main#0" />
+                <element signature="class#11771:11811" />
+                <element signature="e#12757#12769#0" expanded="true" />
                 <element signature="method#distinctSubstringCount#0;class#Main#0" />
-                <element signature="e#12049#12069#0" expanded="true" />
+                <element signature="e#12144#12164#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LinkedList.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/util/LinkedList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="193">
+              <caret line="174" column="14" selection-start-line="174" selection-start-column="14" selection-end-line="174" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Queue.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/util/Queue.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="592">
+              <caret line="192" column="6" selection-start-line="192" selection-start-column="6" selection-end-line="192" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -144,36 +163,35 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info id="Azure Explorer" order="2" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="6" side_tool="true" weight="0.3290938" />
+      <window_info anchor="right" id="Maven Projects" order="4" />
       <window_info anchor="bottom" id="Azure Activity Log" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.3290938" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="bottom" id="Debug" order="2" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="5" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.3290938" />
+      <window_info anchor="right" id="Palette&#9;" order="5" />
       <window_info id="Image Layers" order="2" />
-      <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="HDInsight Spark Submission" order="7" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3290938" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24963397" />
-      <window_info anchor="bottom" id="Remote Spark Job in Cluster" order="7" />
-      <window_info anchor="bottom" id="Debug Remote Spark Job in Cluster" order="7" />
-      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="bottom" id="HDInsight Spark Submission" order="9" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info active="true" anchor="bottom" id="Run" order="14" visible="true" weight="0.37360892" />
+      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.24963397" />
+      <window_info anchor="bottom" id="Remote Spark Job in Cluster" order="12" />
+      <window_info anchor="bottom" id="Debug Remote Spark Job in Cluster" order="13" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3290938" />
@@ -187,7 +205,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>87</line>
+          <line>97</line>
           <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
@@ -198,6 +216,31 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5814">
+          <caret line="342" column="85" lean-forward="true" selection-start-line="342" selection-start-column="85" selection-end-line="342" selection-end-column="85" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#fibonacci#0;class#Main#0" />
+            <element signature="method#climbingStairsRecursion#0;class#Main#0" />
+            <element signature="method#climbingStairsDP#0;class#Main#0" />
+            <element signature="method#robHouseRecursion#0;class#Main#0" />
+            <element signature="method#robHousesTopDownApproach#0;class#Main#0" />
+            <element signature="method#longestIncreasingSubsequence#0;class#Main#0" />
+            <element signature="method#longestSumSubsequence#0;class#Main#0" />
+            <element signature="method#longestBitonicSeq#0;class#Main#0" />
+            <element signature="method#nonOverlappingBridges#0;class#Main#0" />
+            <element signature="method#russianDoll#0;class#Main#0" />
+            <element signature="method#palindromicSubstringCount#0;class#Main#0" />
+            <element signature="class#11771:11811" />
+            <element signature="e#12757#12769#0" expanded="true" />
+            <element signature="method#distinctSubstringCount#0;class#Main#0" />
+            <element signature="e#12144#12164#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4743">
           <caret line="279" column="10" selection-start-line="279" selection-start-column="10" selection-end-line="279" selection-end-column="10" />
           <folding>
@@ -206,15 +249,17 @@
             <element signature="method#climbingStairsRecursion#0;class#Main#0" />
             <element signature="method#climbingStairsDP#0;class#Main#0" />
             <element signature="method#robHouseRecursion#0;class#Main#0" />
-            <element signature="method#robHousesTopDownApproah#0;class#Main#0" />
+            <element signature="method#robHousesTopDownApproach#0;class#Main#0" />
             <element signature="method#longestIncreasingSubsequence#0;class#Main#0" />
             <element signature="method#longestSumSubsequence#0;class#Main#0" />
             <element signature="method#longestBitonicSeq#0;class#Main#0" />
             <element signature="method#nonOverlappingBridges#0;class#Main#0" />
             <element signature="method#russianDoll#0;class#Main#0" />
-            <element signature="method#leastCostlyPath#0;class#Main#0" />
+            <element signature="method#palindromicSubstringCount#0;class#Main#0" />
+            <element signature="class#11771:11811" />
+            <element signature="e#12757#12769#0" expanded="true" />
             <element signature="method#distinctSubstringCount#0;class#Main#0" />
-            <element signature="e#12049#12069#0" expanded="true" />
+            <element signature="e#12144#12164#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -229,15 +274,17 @@
             <element signature="method#climbingStairsRecursion#0;class#Main#0" />
             <element signature="method#climbingStairsDP#0;class#Main#0" />
             <element signature="method#robHouseRecursion#0;class#Main#0" />
-            <element signature="method#robHousesTopDownApproah#0;class#Main#0" />
+            <element signature="method#robHousesTopDownApproach#0;class#Main#0" />
             <element signature="method#longestIncreasingSubsequence#0;class#Main#0" />
             <element signature="method#longestSumSubsequence#0;class#Main#0" />
             <element signature="method#longestBitonicSeq#0;class#Main#0" />
             <element signature="method#nonOverlappingBridges#0;class#Main#0" />
             <element signature="method#russianDoll#0;class#Main#0" />
-            <element signature="method#leastCostlyPath#0;class#Main#0" />
+            <element signature="method#palindromicSubstringCount#0;class#Main#0" />
+            <element signature="class#11771:11811" />
+            <element signature="e#12757#12769#0" expanded="true" />
             <element signature="method#distinctSubstringCount#0;class#Main#0" />
-            <element signature="e#12049#12069#0" expanded="true" />
+            <element signature="e#12144#12164#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -252,39 +299,57 @@
             <element signature="method#climbingStairsRecursion#0;class#Main#0" />
             <element signature="method#climbingStairsDP#0;class#Main#0" />
             <element signature="method#robHouseRecursion#0;class#Main#0" />
-            <element signature="method#robHousesTopDownApproah#0;class#Main#0" />
+            <element signature="method#robHousesTopDownApproach#0;class#Main#0" />
             <element signature="method#longestIncreasingSubsequence#0;class#Main#0" />
             <element signature="method#longestSumSubsequence#0;class#Main#0" />
             <element signature="method#longestBitonicSeq#0;class#Main#0" />
             <element signature="method#nonOverlappingBridges#0;class#Main#0" />
             <element signature="method#russianDoll#0;class#Main#0" />
-            <element signature="method#leastCostlyPath#0;class#Main#0" />
+            <element signature="method#palindromicSubstringCount#0;class#Main#0" />
+            <element signature="class#11771:11811" />
+            <element signature="e#12757#12769#0" expanded="true" />
             <element signature="method#distinctSubstringCount#0;class#Main#0" />
-            <element signature="e#12049#12069#0" expanded="true" />
+            <element signature="e#12144#12164#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/two.java" />
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/util/LinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="174" column="14" selection-start-line="174" selection-start-column="14" selection-end-line="174" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/util/Queue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="592">
+          <caret line="192" column="6" selection-start-line="192" selection-start-column="6" selection-end-line="192" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="-1007">
+          <caret line="33" column="7" lean-forward="true" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#fibonacci#0;class#Main#0" />
             <element signature="method#climbingStairsRecursion#0;class#Main#0" />
             <element signature="method#climbingStairsDP#0;class#Main#0" />
             <element signature="method#robHouseRecursion#0;class#Main#0" />
-            <element signature="method#robHousesTopDownApproah#0;class#Main#0" />
+            <element signature="method#robHousesTopDownApproach#0;class#Main#0" />
             <element signature="method#longestIncreasingSubsequence#0;class#Main#0" />
             <element signature="method#longestSumSubsequence#0;class#Main#0" />
             <element signature="method#longestBitonicSeq#0;class#Main#0" />
             <element signature="method#nonOverlappingBridges#0;class#Main#0" />
             <element signature="method#russianDoll#0;class#Main#0" />
-            <element signature="method#leastCostlyPath#0;class#Main#0" />
+            <element signature="method#palindromicSubstringCount#0;class#Main#0" />
+            <element signature="class#11771:11811" />
+            <element signature="e#12757#12769#0" expanded="true" />
             <element signature="method#distinctSubstringCount#0;class#Main#0" />
-            <element signature="e#12049#12069#0" expanded="true" />
+            <element signature="e#12144#12164#0" expanded="true" />
           </folding>
         </state>
       </provider>

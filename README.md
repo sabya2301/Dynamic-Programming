@@ -12,5 +12,5 @@ Problems in order in the source code ->
 7) Maximum Number of non-overlapping bridge
 8) Russian Doll/ Envelope Problem
 9) Palindromic Substring
-10) Least Costly Path(will do)
+10) Least Costly Path
 11) Distinct Substring count

@@ -1,5 +1,7 @@
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.Queue;
 
 public class Main {
 
@@ -19,9 +21,17 @@ public class Main {
 //        System.out.println(nonOverlappingBridges(new int[][]{{6, 2}, {4, 3}, {2, 6}, {1, 5}}));
 //        System.out.println(russianDoll(new int[][]{ {17,5},{26,18} , {25,34}, {48,84}, {63,72}, {42,86} }));
 
-        System.out.println(palindromicSubstringCount("abccbc"));
+//        System.out.println(palindromicSubstringCount("abccbc"));
 
 //        System.out.println(distinctSubstringCount("abcbac"));
+
+        System.out.println(leastCostlyPath(new int[][]{
+                {2, 6, 1, 1, 3},
+                {9, 1, 1, 0, 5},
+                {0, 7, 5, 2, 0},
+                {4, 3, 0, 4, 7},
+                {2,0, 1, 4, 7}
+        }));
     }
 
 //-----------------------------------------------------------------------------------
@@ -318,9 +328,61 @@ public class Main {
 //-----------------------------------------------------------------------------------
     /* 10) LEAST COSTLY PATH -> Given a 2D matrix, find the least costly path to move from top left corner to bottom left.
            You can only move in horizontal or vertical path. Cost of a cell is its value. */
+    //watch riya bansal dp-4 for future reference
+    public static String leastCostlyPath(int[][] arr){
+        class MatrixCell{
+            int i,j;
+            String path;
 
-    public static void leastCostlyPath(int[][] arr){
-        // will complete later :3
+            public MatrixCell(int i, int j, String path) {
+                this.i = i;
+                this.j = j;
+                this.path = path;
+            }
+        }
+
+        int[][] dp = new int[arr.length][arr[0].length];
+
+        for(int i=dp.length-1; i>=0; --i){
+            for(int j=dp[0].length-1; j>=0; --j){
+                if((i== (dp.length-1)) && j == (dp[0].length-1)){
+                    dp[i][j] = arr[i][j];
+                } else if(i==dp.length-1){
+                    dp[i][j] = arr[i][j] + dp[i][j+1];
+                } else if(j == dp[0].length-1){
+                    dp[i][j] = arr[i][j] + dp[i+1][j];
+                } else{
+                    dp[i][j] = arr[i][j] + Math.min(dp[i+1][j], dp[i][j+1]);
+                }
+            }
+        }
+
+        String resultantPath = dp[0][0] + "\n";
+
+        //implementing BFS
+        Queue<MatrixCell> queue = new LinkedList<MatrixCell>();
+        queue.add(new MatrixCell(0,0,""));
+        while(!queue.isEmpty()){
+            MatrixCell currentCell = queue.remove();
+            if((currentCell.i == (dp.length-1) && currentCell.j == (dp[0].length-1))){
+                resultantPath += currentCell.path +"\n";
+            } else if(currentCell.i == dp.length-1){
+                queue.add(new MatrixCell(currentCell.i,currentCell.j+1, currentCell.path + "H"));
+            } else if(currentCell.j == dp[0].length-1) {
+                queue.add(new MatrixCell(currentCell.i+1, currentCell.j , currentCell.path + "V"));
+            } else{
+                if(dp[currentCell.i][currentCell.j+1] < dp[currentCell.i+1][currentCell.j]){
+                    queue.add(new MatrixCell(currentCell.i, currentCell.j+1, currentCell.path+"H"));
+                } else if(dp[currentCell.i][currentCell.j+1] > dp[currentCell.i+1][currentCell.j]){
+                    queue.add(new MatrixCell(currentCell.i+1, currentCell.j, currentCell.path+"V"));
+                } else{
+                    queue.add(new MatrixCell(currentCell.i, currentCell.j+1, currentCell.path+"H"));
+                    queue.add(new MatrixCell(currentCell.i+1, currentCell.j, currentCell.path+"V"));
+                }
+            }
+        }
+        return resultantPath;
+
     }
 //-----------------------------------------------------------------------------------
     // 11) COUNT NUMBER OF DISTINCT SUBSTRINGS.
