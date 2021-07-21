@@ -18,10 +18,11 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1007">
-              <caret line="33" column="7" lean-forward="true" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
+            <state relative-caret-position="204">
+              <caret line="507" column="8" selection-start-line="507" selection-start-column="8" selection-end-line="507" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#main#0;class#Main#0" />
                 <element signature="method#fibonacci#0;class#Main#0" />
                 <element signature="method#climbingStairsRecursion#0;class#Main#0" />
                 <element signature="method#climbingStairsDP#0;class#Main#0" />
@@ -33,29 +34,14 @@
                 <element signature="method#nonOverlappingBridges#0;class#Main#0" />
                 <element signature="method#russianDoll#0;class#Main#0" />
                 <element signature="method#palindromicSubstringCount#0;class#Main#0" />
-                <element signature="class#11771:11811" />
-                <element signature="e#12757#12769#0" expanded="true" />
+                <element signature="method#leastCostlyPath#0;class#Main#0" />
+                <element signature="e#13093#13105#0" expanded="true" />
                 <element signature="method#distinctSubstringCount#0;class#Main#0" />
-                <element signature="e#12144#12164#0" expanded="true" />
+                <element signature="e#14751#14771#0" expanded="true" />
+                <element signature="method#goldMineExtract#0;class#Main#0" />
+                <element signature="class#15718:15760" />
+                <element signature="e#16828#16842#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LinkedList.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/util/LinkedList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="174" column="14" selection-start-line="174" selection-start-column="14" selection-end-line="174" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Queue.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/util/Queue.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="592">
-              <caret line="192" column="6" selection-start-line="192" selection-start-column="6" selection-end-line="192" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -92,7 +78,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -109,8 +96,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="RunDashboard">
@@ -163,6 +149,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info id="Azure Explorer" order="2" />
@@ -184,7 +171,7 @@
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info active="true" anchor="bottom" id="Run" order="14" visible="true" weight="0.37360892" />
       <window_info anchor="bottom" id="Terminal" order="11" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.24963397" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24963397" />
       <window_info anchor="bottom" id="Remote Spark Job in Cluster" order="12" />
       <window_info anchor="bottom" id="Debug Remote Spark Job in Cluster" order="13" />
       <window_info anchor="right" id="Theme Preview" order="7" />
@@ -205,7 +192,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>97</line>
+          <line>106</line>
           <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
@@ -216,10 +203,11 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5814">
-          <caret line="342" column="85" lean-forward="true" selection-start-line="342" selection-start-column="85" selection-end-line="342" selection-end-column="85" />
+        <state relative-caret-position="6919">
+          <caret line="407" selection-start-line="407" selection-end-line="407" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#main#0;class#Main#0" />
             <element signature="method#fibonacci#0;class#Main#0" />
             <element signature="method#climbingStairsRecursion#0;class#Main#0" />
             <element signature="method#climbingStairsDP#0;class#Main#0" />
@@ -231,10 +219,42 @@
             <element signature="method#nonOverlappingBridges#0;class#Main#0" />
             <element signature="method#russianDoll#0;class#Main#0" />
             <element signature="method#palindromicSubstringCount#0;class#Main#0" />
-            <element signature="class#11771:11811" />
-            <element signature="e#12757#12769#0" expanded="true" />
+            <element signature="method#leastCostlyPath#0;class#Main#0" />
+            <element signature="e#13093#13105#0" expanded="true" />
             <element signature="method#distinctSubstringCount#0;class#Main#0" />
-            <element signature="e#12144#12164#0" expanded="true" />
+            <element signature="e#14751#14771#0" expanded="true" />
+            <element signature="method#goldMineExtract#0;class#Main#0" />
+            <element signature="class#15718:15760" />
+            <element signature="e#16828#16842#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5814">
+          <caret line="342" column="85" lean-forward="true" selection-start-line="342" selection-start-column="85" selection-end-line="342" selection-end-column="85" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#main#0;class#Main#0" />
+            <element signature="method#fibonacci#0;class#Main#0" />
+            <element signature="method#climbingStairsRecursion#0;class#Main#0" />
+            <element signature="method#climbingStairsDP#0;class#Main#0" />
+            <element signature="method#robHouseRecursion#0;class#Main#0" />
+            <element signature="method#robHousesTopDownApproach#0;class#Main#0" />
+            <element signature="method#longestIncreasingSubsequence#0;class#Main#0" />
+            <element signature="method#longestSumSubsequence#0;class#Main#0" />
+            <element signature="method#longestBitonicSeq#0;class#Main#0" />
+            <element signature="method#nonOverlappingBridges#0;class#Main#0" />
+            <element signature="method#russianDoll#0;class#Main#0" />
+            <element signature="method#palindromicSubstringCount#0;class#Main#0" />
+            <element signature="method#leastCostlyPath#0;class#Main#0" />
+            <element signature="e#13093#13105#0" expanded="true" />
+            <element signature="method#distinctSubstringCount#0;class#Main#0" />
+            <element signature="e#14751#14771#0" expanded="true" />
+            <element signature="method#goldMineExtract#0;class#Main#0" />
+            <element signature="class#15718:15760" />
+            <element signature="e#16828#16842#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -245,6 +265,7 @@
           <caret line="279" column="10" selection-start-line="279" selection-start-column="10" selection-end-line="279" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#main#0;class#Main#0" />
             <element signature="method#fibonacci#0;class#Main#0" />
             <element signature="method#climbingStairsRecursion#0;class#Main#0" />
             <element signature="method#climbingStairsDP#0;class#Main#0" />
@@ -256,10 +277,13 @@
             <element signature="method#nonOverlappingBridges#0;class#Main#0" />
             <element signature="method#russianDoll#0;class#Main#0" />
             <element signature="method#palindromicSubstringCount#0;class#Main#0" />
-            <element signature="class#11771:11811" />
-            <element signature="e#12757#12769#0" expanded="true" />
+            <element signature="method#leastCostlyPath#0;class#Main#0" />
+            <element signature="e#13093#13105#0" expanded="true" />
             <element signature="method#distinctSubstringCount#0;class#Main#0" />
-            <element signature="e#12144#12164#0" expanded="true" />
+            <element signature="e#14751#14771#0" expanded="true" />
+            <element signature="method#goldMineExtract#0;class#Main#0" />
+            <element signature="class#15718:15760" />
+            <element signature="e#16828#16842#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -270,6 +294,7 @@
           <caret line="185" selection-start-line="185" selection-end-line="185" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#main#0;class#Main#0" />
             <element signature="method#fibonacci#0;class#Main#0" />
             <element signature="method#climbingStairsRecursion#0;class#Main#0" />
             <element signature="method#climbingStairsDP#0;class#Main#0" />
@@ -281,10 +306,13 @@
             <element signature="method#nonOverlappingBridges#0;class#Main#0" />
             <element signature="method#russianDoll#0;class#Main#0" />
             <element signature="method#palindromicSubstringCount#0;class#Main#0" />
-            <element signature="class#11771:11811" />
-            <element signature="e#12757#12769#0" expanded="true" />
+            <element signature="method#leastCostlyPath#0;class#Main#0" />
+            <element signature="e#13093#13105#0" expanded="true" />
             <element signature="method#distinctSubstringCount#0;class#Main#0" />
-            <element signature="e#12144#12164#0" expanded="true" />
+            <element signature="e#14751#14771#0" expanded="true" />
+            <element signature="method#goldMineExtract#0;class#Main#0" />
+            <element signature="class#15718:15760" />
+            <element signature="e#16828#16842#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -295,6 +323,7 @@
           <caret line="118" column="10" lean-forward="true" selection-start-line="118" selection-start-column="10" selection-end-line="118" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#main#0;class#Main#0" />
             <element signature="method#fibonacci#0;class#Main#0" />
             <element signature="method#climbingStairsRecursion#0;class#Main#0" />
             <element signature="method#climbingStairsDP#0;class#Main#0" />
@@ -306,10 +335,13 @@
             <element signature="method#nonOverlappingBridges#0;class#Main#0" />
             <element signature="method#russianDoll#0;class#Main#0" />
             <element signature="method#palindromicSubstringCount#0;class#Main#0" />
-            <element signature="class#11771:11811" />
-            <element signature="e#12757#12769#0" expanded="true" />
+            <element signature="method#leastCostlyPath#0;class#Main#0" />
+            <element signature="e#13093#13105#0" expanded="true" />
             <element signature="method#distinctSubstringCount#0;class#Main#0" />
-            <element signature="e#12144#12164#0" expanded="true" />
+            <element signature="e#14751#14771#0" expanded="true" />
+            <element signature="method#goldMineExtract#0;class#Main#0" />
+            <element signature="class#15718:15760" />
+            <element signature="e#16828#16842#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -331,10 +363,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1007">
-          <caret line="33" column="7" lean-forward="true" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
+        <state relative-caret-position="204">
+          <caret line="507" column="8" selection-start-line="507" selection-start-column="8" selection-end-line="507" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#main#0;class#Main#0" />
             <element signature="method#fibonacci#0;class#Main#0" />
             <element signature="method#climbingStairsRecursion#0;class#Main#0" />
             <element signature="method#climbingStairsDP#0;class#Main#0" />
@@ -346,10 +379,13 @@
             <element signature="method#nonOverlappingBridges#0;class#Main#0" />
             <element signature="method#russianDoll#0;class#Main#0" />
             <element signature="method#palindromicSubstringCount#0;class#Main#0" />
-            <element signature="class#11771:11811" />
-            <element signature="e#12757#12769#0" expanded="true" />
+            <element signature="method#leastCostlyPath#0;class#Main#0" />
+            <element signature="e#13093#13105#0" expanded="true" />
             <element signature="method#distinctSubstringCount#0;class#Main#0" />
-            <element signature="e#12144#12164#0" expanded="true" />
+            <element signature="e#14751#14771#0" expanded="true" />
+            <element signature="method#goldMineExtract#0;class#Main#0" />
+            <element signature="class#15718:15760" />
+            <element signature="e#16828#16842#0" expanded="true" />
           </folding>
         </state>
       </provider>

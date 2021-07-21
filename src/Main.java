@@ -25,13 +25,22 @@ public class Main {
 
 //        System.out.println(distinctSubstringCount("abcbac"));
 
-        System.out.println(leastCostlyPath(new int[][]{
-                {2, 6, 1, 1, 3},
-                {9, 1, 1, 0, 5},
-                {0, 7, 5, 2, 0},
-                {4, 3, 0, 4, 7},
-                {2,0, 1, 4, 7}
-        }));
+//        System.out.println(leastCostlyPath(new int[][]{
+//                {2, 6, 1, 1, 3},
+//                {9, 1, 1, 0, 5},
+//                {0, 7, 5, 2, 0},
+//                {4, 3, 0, 4, 7},
+//                {2,0, 1, 4, 7}
+//        }));
+//        System.out.println(goldMineExtract(new int[][]{
+//                    {3, 2, 3, 1},
+//                    {2, 4, 6, 0},
+//                    {5, 0, 1, 3},
+//                    {9, 1, 5, 1}
+//            }));
+
+
+
     }
 
 //-----------------------------------------------------------------------------------
@@ -403,7 +412,102 @@ public class Main {
         return dp[dp.length-1];
     }
 //-----------------------------------------------------------------------------------
+    // 12) MAX GOLD EXTRACTED -> Starting from anywhere on the first column, find the maximum gold that can be extracted,
+    //      given that you can only move diagonally forward and horizantally forward.
+    //      Also print all the possible paths.
+    // TC - O(M*N), S.C - O(M*N)
+    public static String goldMineExtract(int[][] arr){
+
+        class GoldMineCell{
+            int i, j;
+            String path;
+
+            public GoldMineCell(int i, int j, String path) {
+                this.i = i;
+                this.j = j;
+                this.path = path;
+            }
+        }
+
+        int[][] dp = new int[arr.length][arr[0].length];
+
+        for(int j = dp[0].length-1; j>=0; --j){
+            for(int i=dp.length-1; i>=0; --i){
+                if(j == dp.length-1){
+                    dp[i][j] = arr[i][j];
+                } else if(i == 0){
+                    dp[i][j] = arr[i][j] + Math.max(dp[i][j+1], dp[i+1][j+1]);
+                } else if(i == dp.length-1){
+                    dp[i][j] = arr[i][j] + Math.max(dp[i][j+1], dp[i-1][j+1]);
+                } else{
+                    dp[i][j] = arr[i][j] + Math.max(dp[i][j+1], Math.max(dp[i+1][j+1], dp[i-1][j+1]));
+                }
+            }
+        }
+        int firstRowMax = Integer.MIN_VALUE;
+        for(int i=0; i<arr.length; ++i){
+            if(dp[i][0] > firstRowMax)
+                firstRowMax = dp[i][0];
+        }
+
+        Queue<GoldMineCell> queue = new LinkedList<GoldMineCell>();
+        for(int i=0; i<dp.length; ++i){
+            if(dp[i][0] == firstRowMax)
+                queue.add(new GoldMineCell(i,0, ""));
+        }
+        String resultantPath = firstRowMax + "\n";
+
+        while (!queue.isEmpty()){
+            GoldMineCell currentCell = queue.remove();
+            if(currentCell.j == dp[0].length-1){
+                resultantPath += currentCell.path + "\n";
+            }
+            else if(currentCell.i == 0){
+                if(dp[currentCell.i+1][currentCell.j+1] > dp[currentCell.i][currentCell.j+1]){
+                    queue.add(new GoldMineCell(currentCell.i+1, currentCell.j+1, currentCell.path+"d3"));
+                } else if(dp[currentCell.i+1][currentCell.j+1] < dp[currentCell.i][currentCell.j+1]){
+                    queue.add(new GoldMineCell(currentCell.i, currentCell.j+1, currentCell.path+"d2"));
+                } else{
+                    queue.add(new GoldMineCell(currentCell.i+1, currentCell.j+1, currentCell.path+"d3"));
+                    queue.add(new GoldMineCell(currentCell.i, currentCell.j+1, currentCell.path+"d2"));
+                }
+            }
+            else if(currentCell.i == dp.length-1){
+                if(dp[currentCell.i-1][currentCell.j+1] > dp[currentCell.i][currentCell.j+1]){
+                    queue.add(new GoldMineCell(currentCell.i-1, currentCell.j+1, currentCell.path+"d1"));
+                } else if(dp[currentCell.i-1][currentCell.j+1] < dp[currentCell.i][currentCell.j+1]){
+                    queue.add(new GoldMineCell(currentCell.i, currentCell.j+1, currentCell.path+"d2"));
+                } else{
+                    queue.add(new GoldMineCell(currentCell.i-1, currentCell.j+1, currentCell.path+"d1"));
+                    queue.add(new GoldMineCell(currentCell.i, currentCell.j+1, currentCell.path+"d2"));
+                }
+            } else{
+                int maxGold = Math.max(dp[currentCell.i][currentCell.j+1],
+                        Math.max(dp[currentCell.i-1][currentCell.j+1], dp[currentCell.i+1][currentCell.j+1]));
+                if(dp[currentCell.i-1][currentCell.j+1] == maxGold)
+                    queue.add(new GoldMineCell(currentCell.i-1,currentCell.j+1,currentCell.path+"d1"));
+                if(dp[currentCell.i][currentCell.j+1] == maxGold)
+                    queue.add(new GoldMineCell(currentCell.i,currentCell.j+1,currentCell.path+"d2"));
+                if(dp[currentCell.i+1][currentCell.j+1] == maxGold)
+                    queue.add(new GoldMineCell(currentCell.i+1,currentCell.j+1,currentCell.path+"d3"));
+            }
+        }
+
+        for(int i=0; i<dp.length; ++i){
+            for(int j=0; j<dp[0].length; ++j){
+                System.out.print(dp[i][j] + " ");
+            }
+            System.out.println();
+        }
+        return resultantPath;
+    }
+
 //-----------------------------------------------------------------------------------
+    // 13) PRINT ALL SUBSETS OF AN ARRAY WHICH ADD UP TO A TARGET
+    public static void subSetsofArray(int[] arr){
+        
+    }
+
 //-----------------------------------------------------------------------------------
 //-----------------------------------------------------------------------------------
 //-----------------------------------------------------------------------------------

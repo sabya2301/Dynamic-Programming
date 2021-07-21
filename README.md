@@ -14,3 +14,4 @@ Problems in order in the source code ->
 9) Palindromic Substring
 10) Least Costly Path
 11) Distinct Substring count
+12) Maximum Gold Extraction(2D DP)
