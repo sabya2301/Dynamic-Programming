@@ -39,7 +39,7 @@ public class Main {
 //                    {9, 1, 5, 1}
 //            }));
 
-
+        targetSumSubset(new int[]{4,2,7,1,3}, 10);
 
     }
 
@@ -504,8 +504,64 @@ public class Main {
 
 //-----------------------------------------------------------------------------------
     // 13) PRINT ALL SUBSETS OF AN ARRAY WHICH ADD UP TO A TARGET
-    public static void subSetsofArray(int[] arr){
-        
+    public static void targetSumSubset(int[] arr, int target){
+
+        class Pair{
+            int i, j;
+            String path;
+
+            public Pair(int i, int j, String path) {
+                this.i = i;
+                this.j = j;
+                this.path = path;
+            }
+        }
+
+        int[][] dp = new int[arr.length+1][target+1];
+        dp[0][0] = 1;
+        for(int i=1; i<dp.length; ++i){
+            for(int j=0; j<dp[0].length; ++j){
+                if(j==0){
+                    dp[i][j] = 1;
+                } else if((dp[i-1][j] == 1 || arr[i-1] == j )){
+                    dp[i][j] = 1;
+                }else if(j > arr[i-1] && dp[i-1][j-arr[i-1]] == 1){
+                    dp[i][j] = 1;
+                }
+            }
+        }
+
+        int count=0;
+        for(int i=0; i<dp.length; ++i){
+            for(int j=0; j<dp[0].length; ++j){
+                System.out.print(dp[i][j] + " ");
+                if(j==dp[0].length-1 && dp[i][j] == 1)
+                    count++;
+            }
+            System.out.println();
+        }
+
+        String finalAns = count + "\n";
+        Queue<Pair> queue = new LinkedList<Pair>();
+        queue.add(new Pair(arr.length, target, ""));
+        while(!queue.isEmpty()){
+            Pair currentPair = queue.remove();
+            if(currentPair.i == 0 || currentPair.j == 0){
+                finalAns += currentPair.path + "\n";
+            } else {
+                if(currentPair.j >= arr[currentPair.i-1]){
+                    int included = dp[currentPair.i-1][currentPair.j - arr[currentPair.i-1]];
+                    if(included == 1)
+                        queue.add(new Pair(currentPair.i-1, currentPair.j-arr[currentPair.i-1], currentPair.path+arr[currentPair.i-1]+" "));
+                }
+                int excluded = dp[currentPair.i-1][currentPair.j];
+                if(excluded == 1){
+                    queue.add(new Pair(currentPair.i-1, currentPair.j, currentPair.path));
+                }
+            }
+        }
+        System.out.println("\n"+ finalAns);
+
     }
 
 //-----------------------------------------------------------------------------------
