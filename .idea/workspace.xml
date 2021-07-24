@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30a55ba3-6c87-41c0-9c01-34dd15964c60" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -18,8 +17,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="542" lean-forward="true" selection-start-line="542" selection-end-line="542" />
+            <state relative-caret-position="187">
+              <caret line="600" column="36" selection-start-line="600" selection-start-column="36" selection-end-line="600" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#fibonacci#0;class#Main#0" />
@@ -36,8 +35,11 @@
                 <element signature="method#leastCostlyPath#0;class#Main#0" />
                 <element signature="method#distinctSubstringCount#0;class#Main#0" />
                 <element signature="method#goldMineExtract#0;class#Main#0" />
+                <element signature="method#targetSumSubset#0;class#Main#0" />
                 <element signature="class#19990:20024" />
                 <element signature="e#21063#21069#0" expanded="true" />
+                <element signature="class#22266:22492" />
+                <element signature="e#23136#23142#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -218,8 +220,11 @@
             <element signature="method#leastCostlyPath#0;class#Main#0" />
             <element signature="method#distinctSubstringCount#0;class#Main#0" />
             <element signature="method#goldMineExtract#0;class#Main#0" />
+            <element signature="method#targetSumSubset#0;class#Main#0" />
             <element signature="class#19990:20024" />
             <element signature="e#21063#21069#0" expanded="true" />
+            <element signature="class#22266:22492" />
+            <element signature="e#23136#23142#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -244,8 +249,11 @@
             <element signature="method#leastCostlyPath#0;class#Main#0" />
             <element signature="method#distinctSubstringCount#0;class#Main#0" />
             <element signature="method#goldMineExtract#0;class#Main#0" />
+            <element signature="method#targetSumSubset#0;class#Main#0" />
             <element signature="class#19990:20024" />
             <element signature="e#21063#21069#0" expanded="true" />
+            <element signature="class#22266:22492" />
+            <element signature="e#23136#23142#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -270,8 +278,11 @@
             <element signature="method#leastCostlyPath#0;class#Main#0" />
             <element signature="method#distinctSubstringCount#0;class#Main#0" />
             <element signature="method#goldMineExtract#0;class#Main#0" />
+            <element signature="method#targetSumSubset#0;class#Main#0" />
             <element signature="class#19990:20024" />
             <element signature="e#21063#21069#0" expanded="true" />
+            <element signature="class#22266:22492" />
+            <element signature="e#23136#23142#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -296,8 +307,11 @@
             <element signature="method#leastCostlyPath#0;class#Main#0" />
             <element signature="method#distinctSubstringCount#0;class#Main#0" />
             <element signature="method#goldMineExtract#0;class#Main#0" />
+            <element signature="method#targetSumSubset#0;class#Main#0" />
             <element signature="class#19990:20024" />
             <element signature="e#21063#21069#0" expanded="true" />
+            <element signature="class#22266:22492" />
+            <element signature="e#23136#23142#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -322,8 +336,11 @@
             <element signature="method#leastCostlyPath#0;class#Main#0" />
             <element signature="method#distinctSubstringCount#0;class#Main#0" />
             <element signature="method#goldMineExtract#0;class#Main#0" />
+            <element signature="method#targetSumSubset#0;class#Main#0" />
             <element signature="class#19990:20024" />
             <element signature="e#21063#21069#0" expanded="true" />
+            <element signature="class#22266:22492" />
+            <element signature="e#23136#23142#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -348,8 +365,11 @@
             <element signature="method#leastCostlyPath#0;class#Main#0" />
             <element signature="method#distinctSubstringCount#0;class#Main#0" />
             <element signature="method#goldMineExtract#0;class#Main#0" />
+            <element signature="method#targetSumSubset#0;class#Main#0" />
             <element signature="class#19990:20024" />
             <element signature="e#21063#21069#0" expanded="true" />
+            <element signature="class#22266:22492" />
+            <element signature="e#23136#23142#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -374,8 +394,11 @@
             <element signature="method#leastCostlyPath#0;class#Main#0" />
             <element signature="method#distinctSubstringCount#0;class#Main#0" />
             <element signature="method#goldMineExtract#0;class#Main#0" />
+            <element signature="method#targetSumSubset#0;class#Main#0" />
             <element signature="class#19990:20024" />
             <element signature="e#21063#21069#0" expanded="true" />
+            <element signature="class#22266:22492" />
+            <element signature="e#23136#23142#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -404,8 +427,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="542" lean-forward="true" selection-start-line="542" selection-end-line="542" />
+        <state relative-caret-position="187">
+          <caret line="600" column="36" selection-start-line="600" selection-start-column="36" selection-end-line="600" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#fibonacci#0;class#Main#0" />
@@ -422,8 +445,11 @@
             <element signature="method#leastCostlyPath#0;class#Main#0" />
             <element signature="method#distinctSubstringCount#0;class#Main#0" />
             <element signature="method#goldMineExtract#0;class#Main#0" />
+            <element signature="method#targetSumSubset#0;class#Main#0" />
             <element signature="class#19990:20024" />
             <element signature="e#21063#21069#0" expanded="true" />
+            <element signature="class#22266:22492" />
+            <element signature="e#23136#23142#0" expanded="true" />
           </folding>
         </state>
       </provider>

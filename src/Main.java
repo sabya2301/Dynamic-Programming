@@ -39,8 +39,8 @@ public class Main {
 //                    {9, 1, 5, 1}
 //            }));
 
-        targetSumSubset(new int[]{4,2,7,1,3}, 10);
-
+//        System.out.println(targetSumSubset(new int[]{4,2,3,1,7}, 4 ));
+        System.out.println(knapsack0_1(new int[]{2,5,1,3,4}, new int[]{15,14,10,45,30}, 9));
     }
 
 //-----------------------------------------------------------------------------------
@@ -504,7 +504,7 @@ public class Main {
 
 //-----------------------------------------------------------------------------------
     // 13) PRINT ALL SUBSETS OF AN ARRAY WHICH ADD UP TO A TARGET
-    public static void targetSumSubset(int[] arr, int target){
+    public static String targetSumSubset(int[] arr, int target){
 
         class Pair{
             int i, j;
@@ -535,24 +535,24 @@ public class Main {
         for(int i=0; i<dp.length; ++i){
             for(int j=0; j<dp[0].length; ++j){
                 System.out.print(dp[i][j] + " ");
-                if(j==dp[0].length-1 && dp[i][j] == 1)
-                    count++;
             }
             System.out.println();
         }
-
-        String finalAns = count + "\n";
+        System.out.println();
+        String finalAns = "";
         Queue<Pair> queue = new LinkedList<Pair>();
         queue.add(new Pair(arr.length, target, ""));
         while(!queue.isEmpty()){
             Pair currentPair = queue.remove();
             if(currentPair.i == 0 || currentPair.j == 0){
                 finalAns += currentPair.path + "\n";
+                count++;
             } else {
                 if(currentPair.j >= arr[currentPair.i-1]){
                     int included = dp[currentPair.i-1][currentPair.j - arr[currentPair.i-1]];
                     if(included == 1)
-                        queue.add(new Pair(currentPair.i-1, currentPair.j-arr[currentPair.i-1], currentPair.path+arr[currentPair.i-1]+" "));
+                        queue.add(new Pair(currentPair.i-1, currentPair.j-arr[currentPair.i-1],
+                                currentPair.path+arr[currentPair.i-1]+" "));
                 }
                 int excluded = dp[currentPair.i-1][currentPair.j];
                 if(excluded == 1){
@@ -560,11 +560,71 @@ public class Main {
                 }
             }
         }
-        System.out.println("\n"+ finalAns);
+        return(count+"\n"+finalAns);
 
     }
 
 //-----------------------------------------------------------------------------------
+    // 14) 0-1 KNAPSACK PROBLEM
+    public static String knapsack0_1(int[] values, int[] weights, int capacity){
+
+        class Pair{
+            int i, j;
+            String path;
+
+            public Pair(int i, int j, String path) {
+                this.i = i;
+                this.j = j;
+                this.path = path;
+            }
+        }
+
+        int[][] dp = new int[values.length+1][capacity+1];
+        for(int i=1; i<dp.length; ++i){
+            for(int j=0; j<dp[0].length; ++j){
+                dp[i][j] = dp[i-1][j];
+                if(j >= values[i-1]){
+                    if(weights[i-1] + dp[i-1][j- values[i-1]] > dp[i-1][j])
+                        dp[i][j] = weights[i-1] + dp[i-1][j- values[i-1]];
+                }
+
+            }
+        }
+
+        for(int i=0; i<dp.length; ++i){
+            for(int j=0; j<dp[0].length; ++j)
+                System.out.print(dp[i][j] + "  ");
+            System.out.println();
+        }
+        System.out.println();
+        String finalAnswer = "Maximum achievable value is " + dp[dp.length-1][dp[0].length-1] +
+                "\ncontributed by values : ";
+        Queue<Pair> queue = new LinkedList<Pair>();
+        queue.add(new Pair(dp.length-1, dp[0].length-1, ""));
+        while(!queue.isEmpty()){
+            Pair currentPair = queue.remove();
+            if(currentPair.i == 0 || currentPair.j == 0){
+                finalAnswer += currentPair.path;
+            } else {
+                if(currentPair.j >= values[currentPair.i-1]){
+                    int isIncluded = dp[currentPair.i-1][currentPair.j-values[currentPair.i-1]] + weights[currentPair.i-1];
+                    if(isIncluded == dp[currentPair.i][currentPair.j]){
+                        queue.add(new Pair(currentPair.i-1, currentPair.j-values[currentPair.i-1],
+                                values[currentPair.i-1]+ " " + currentPair.path ));
+                    }
+                }
+                int isExcluded = dp[currentPair.i-1][currentPair.j];
+                if(dp[currentPair.i][currentPair.j] == isExcluded){
+                    queue.add(new Pair(currentPair.i-1, currentPair.j, currentPair.path));
+                }
+            }
+        }
+
+        return finalAnswer;
+
+
+    }
+
 //-----------------------------------------------------------------------------------
 //-----------------------------------------------------------------------------------
 //-----------------------------------------------------------------------------------
