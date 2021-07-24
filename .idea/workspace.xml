@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30a55ba3-6c87-41c0-9c01-34dd15964c60" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -17,8 +19,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="600" column="36" selection-start-line="600" selection-start-column="36" selection-end-line="600" selection-end-column="36" />
+            <state relative-caret-position="196">
+              <caret line="656" column="27" selection-start-line="656" selection-start-column="27" selection-end-line="656" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#fibonacci#0;class#Main#0" />
@@ -33,13 +35,16 @@
                 <element signature="method#russianDoll#0;class#Main#0" />
                 <element signature="method#palindromicSubstringCount#0;class#Main#0" />
                 <element signature="method#leastCostlyPath#0;class#Main#0" />
+                <element signature="e#13478#13490#0" expanded="true" />
                 <element signature="method#distinctSubstringCount#0;class#Main#0" />
+                <element signature="e#15136#15156#0" expanded="true" />
                 <element signature="method#goldMineExtract#0;class#Main#0" />
+                <element signature="e#17049#17063#0" expanded="true" />
                 <element signature="method#targetSumSubset#0;class#Main#0" />
-                <element signature="class#19990:20024" />
-                <element signature="e#21063#21069#0" expanded="true" />
-                <element signature="class#22266:22492" />
-                <element signature="e#23136#23142#0" expanded="true" />
+                <element signature="e#21110#21116#0" expanded="true" />
+                <element signature="method#knapsack0_1#0;class#Main#0" />
+                <element signature="e#23321#23327#0" expanded="true" />
+                <element signature="method#stock01#0;class#Main#0" />
               </folding>
             </state>
           </provider>
@@ -93,9 +98,9 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
       <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="RunDashboard">
@@ -191,7 +196,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>106</line>
+          <line>109</line>
           <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
@@ -200,6 +205,38 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7089">
+          <caret line="417" column="32" lean-forward="true" selection-start-line="417" selection-start-column="32" selection-end-line="417" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#fibonacci#0;class#Main#0" />
+            <element signature="method#climbingStairsRecursion#0;class#Main#0" />
+            <element signature="method#climbingStairsDP#0;class#Main#0" />
+            <element signature="method#robHouseRecursion#0;class#Main#0" />
+            <element signature="method#robHousesTopDownApproach#0;class#Main#0" />
+            <element signature="method#longestIncreasingSubsequence#0;class#Main#0" />
+            <element signature="method#longestSumSubsequence#0;class#Main#0" />
+            <element signature="method#longestBitonicSeq#0;class#Main#0" />
+            <element signature="method#nonOverlappingBridges#0;class#Main#0" />
+            <element signature="method#russianDoll#0;class#Main#0" />
+            <element signature="method#palindromicSubstringCount#0;class#Main#0" />
+            <element signature="method#leastCostlyPath#0;class#Main#0" />
+            <element signature="e#13478#13490#0" expanded="true" />
+            <element signature="method#distinctSubstringCount#0;class#Main#0" />
+            <element signature="e#15136#15156#0" expanded="true" />
+            <element signature="method#goldMineExtract#0;class#Main#0" />
+            <element signature="e#17049#17063#0" expanded="true" />
+            <element signature="method#targetSumSubset#0;class#Main#0" />
+            <element signature="e#21110#21116#0" expanded="true" />
+            <element signature="method#knapsack0_1#0;class#Main#0" />
+            <element signature="e#23321#23327#0" expanded="true" />
+            <element signature="method#stock01#0;class#Main#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="8619">
@@ -218,13 +255,16 @@
             <element signature="method#russianDoll#0;class#Main#0" />
             <element signature="method#palindromicSubstringCount#0;class#Main#0" />
             <element signature="method#leastCostlyPath#0;class#Main#0" />
+            <element signature="e#13478#13490#0" expanded="true" />
             <element signature="method#distinctSubstringCount#0;class#Main#0" />
+            <element signature="e#15136#15156#0" expanded="true" />
             <element signature="method#goldMineExtract#0;class#Main#0" />
+            <element signature="e#17049#17063#0" expanded="true" />
             <element signature="method#targetSumSubset#0;class#Main#0" />
-            <element signature="class#19990:20024" />
-            <element signature="e#21063#21069#0" expanded="true" />
-            <element signature="class#22266:22492" />
-            <element signature="e#23136#23142#0" expanded="true" />
+            <element signature="e#21110#21116#0" expanded="true" />
+            <element signature="method#knapsack0_1#0;class#Main#0" />
+            <element signature="e#23321#23327#0" expanded="true" />
+            <element signature="method#stock01#0;class#Main#0" />
           </folding>
         </state>
       </provider>
@@ -247,13 +287,16 @@
             <element signature="method#russianDoll#0;class#Main#0" />
             <element signature="method#palindromicSubstringCount#0;class#Main#0" />
             <element signature="method#leastCostlyPath#0;class#Main#0" />
+            <element signature="e#13478#13490#0" expanded="true" />
             <element signature="method#distinctSubstringCount#0;class#Main#0" />
+            <element signature="e#15136#15156#0" expanded="true" />
             <element signature="method#goldMineExtract#0;class#Main#0" />
+            <element signature="e#17049#17063#0" expanded="true" />
             <element signature="method#targetSumSubset#0;class#Main#0" />
-            <element signature="class#19990:20024" />
-            <element signature="e#21063#21069#0" expanded="true" />
-            <element signature="class#22266:22492" />
-            <element signature="e#23136#23142#0" expanded="true" />
+            <element signature="e#21110#21116#0" expanded="true" />
+            <element signature="method#knapsack0_1#0;class#Main#0" />
+            <element signature="e#23321#23327#0" expanded="true" />
+            <element signature="method#stock01#0;class#Main#0" />
           </folding>
         </state>
       </provider>
@@ -276,13 +319,16 @@
             <element signature="method#russianDoll#0;class#Main#0" />
             <element signature="method#palindromicSubstringCount#0;class#Main#0" />
             <element signature="method#leastCostlyPath#0;class#Main#0" />
+            <element signature="e#13478#13490#0" expanded="true" />
             <element signature="method#distinctSubstringCount#0;class#Main#0" />
+            <element signature="e#15136#15156#0" expanded="true" />
             <element signature="method#goldMineExtract#0;class#Main#0" />
+            <element signature="e#17049#17063#0" expanded="true" />
             <element signature="method#targetSumSubset#0;class#Main#0" />
-            <element signature="class#19990:20024" />
-            <element signature="e#21063#21069#0" expanded="true" />
-            <element signature="class#22266:22492" />
-            <element signature="e#23136#23142#0" expanded="true" />
+            <element signature="e#21110#21116#0" expanded="true" />
+            <element signature="method#knapsack0_1#0;class#Main#0" />
+            <element signature="e#23321#23327#0" expanded="true" />
+            <element signature="method#stock01#0;class#Main#0" />
           </folding>
         </state>
       </provider>
@@ -305,13 +351,16 @@
             <element signature="method#russianDoll#0;class#Main#0" />
             <element signature="method#palindromicSubstringCount#0;class#Main#0" />
             <element signature="method#leastCostlyPath#0;class#Main#0" />
+            <element signature="e#13478#13490#0" expanded="true" />
             <element signature="method#distinctSubstringCount#0;class#Main#0" />
+            <element signature="e#15136#15156#0" expanded="true" />
             <element signature="method#goldMineExtract#0;class#Main#0" />
+            <element signature="e#17049#17063#0" expanded="true" />
             <element signature="method#targetSumSubset#0;class#Main#0" />
-            <element signature="class#19990:20024" />
-            <element signature="e#21063#21069#0" expanded="true" />
-            <element signature="class#22266:22492" />
-            <element signature="e#23136#23142#0" expanded="true" />
+            <element signature="e#21110#21116#0" expanded="true" />
+            <element signature="method#knapsack0_1#0;class#Main#0" />
+            <element signature="e#23321#23327#0" expanded="true" />
+            <element signature="method#stock01#0;class#Main#0" />
           </folding>
         </state>
       </provider>
@@ -334,13 +383,16 @@
             <element signature="method#russianDoll#0;class#Main#0" />
             <element signature="method#palindromicSubstringCount#0;class#Main#0" />
             <element signature="method#leastCostlyPath#0;class#Main#0" />
+            <element signature="e#13478#13490#0" expanded="true" />
             <element signature="method#distinctSubstringCount#0;class#Main#0" />
+            <element signature="e#15136#15156#0" expanded="true" />
             <element signature="method#goldMineExtract#0;class#Main#0" />
+            <element signature="e#17049#17063#0" expanded="true" />
             <element signature="method#targetSumSubset#0;class#Main#0" />
-            <element signature="class#19990:20024" />
-            <element signature="e#21063#21069#0" expanded="true" />
-            <element signature="class#22266:22492" />
-            <element signature="e#23136#23142#0" expanded="true" />
+            <element signature="e#21110#21116#0" expanded="true" />
+            <element signature="method#knapsack0_1#0;class#Main#0" />
+            <element signature="e#23321#23327#0" expanded="true" />
+            <element signature="method#stock01#0;class#Main#0" />
           </folding>
         </state>
       </provider>
@@ -363,13 +415,16 @@
             <element signature="method#russianDoll#0;class#Main#0" />
             <element signature="method#palindromicSubstringCount#0;class#Main#0" />
             <element signature="method#leastCostlyPath#0;class#Main#0" />
+            <element signature="e#13478#13490#0" expanded="true" />
             <element signature="method#distinctSubstringCount#0;class#Main#0" />
+            <element signature="e#15136#15156#0" expanded="true" />
             <element signature="method#goldMineExtract#0;class#Main#0" />
+            <element signature="e#17049#17063#0" expanded="true" />
             <element signature="method#targetSumSubset#0;class#Main#0" />
-            <element signature="class#19990:20024" />
-            <element signature="e#21063#21069#0" expanded="true" />
-            <element signature="class#22266:22492" />
-            <element signature="e#23136#23142#0" expanded="true" />
+            <element signature="e#21110#21116#0" expanded="true" />
+            <element signature="method#knapsack0_1#0;class#Main#0" />
+            <element signature="e#23321#23327#0" expanded="true" />
+            <element signature="method#stock01#0;class#Main#0" />
           </folding>
         </state>
       </provider>
@@ -392,13 +447,16 @@
             <element signature="method#russianDoll#0;class#Main#0" />
             <element signature="method#palindromicSubstringCount#0;class#Main#0" />
             <element signature="method#leastCostlyPath#0;class#Main#0" />
+            <element signature="e#13478#13490#0" expanded="true" />
             <element signature="method#distinctSubstringCount#0;class#Main#0" />
+            <element signature="e#15136#15156#0" expanded="true" />
             <element signature="method#goldMineExtract#0;class#Main#0" />
+            <element signature="e#17049#17063#0" expanded="true" />
             <element signature="method#targetSumSubset#0;class#Main#0" />
-            <element signature="class#19990:20024" />
-            <element signature="e#21063#21069#0" expanded="true" />
-            <element signature="class#22266:22492" />
-            <element signature="e#23136#23142#0" expanded="true" />
+            <element signature="e#21110#21116#0" expanded="true" />
+            <element signature="method#knapsack0_1#0;class#Main#0" />
+            <element signature="e#23321#23327#0" expanded="true" />
+            <element signature="method#stock01#0;class#Main#0" />
           </folding>
         </state>
       </provider>
@@ -427,8 +485,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="600" column="36" selection-start-line="600" selection-start-column="36" selection-end-line="600" selection-end-column="36" />
+        <state relative-caret-position="196">
+          <caret line="656" column="27" selection-start-line="656" selection-start-column="27" selection-end-line="656" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#fibonacci#0;class#Main#0" />
@@ -443,13 +501,16 @@
             <element signature="method#russianDoll#0;class#Main#0" />
             <element signature="method#palindromicSubstringCount#0;class#Main#0" />
             <element signature="method#leastCostlyPath#0;class#Main#0" />
+            <element signature="e#13478#13490#0" expanded="true" />
             <element signature="method#distinctSubstringCount#0;class#Main#0" />
+            <element signature="e#15136#15156#0" expanded="true" />
             <element signature="method#goldMineExtract#0;class#Main#0" />
+            <element signature="e#17049#17063#0" expanded="true" />
             <element signature="method#targetSumSubset#0;class#Main#0" />
-            <element signature="class#19990:20024" />
-            <element signature="e#21063#21069#0" expanded="true" />
-            <element signature="class#22266:22492" />
-            <element signature="e#23136#23142#0" expanded="true" />
+            <element signature="e#21110#21116#0" expanded="true" />
+            <element signature="method#knapsack0_1#0;class#Main#0" />
+            <element signature="e#23321#23327#0" expanded="true" />
+            <element signature="method#stock01#0;class#Main#0" />
           </folding>
         </state>
       </provider>

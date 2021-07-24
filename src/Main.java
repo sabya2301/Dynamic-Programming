@@ -40,7 +40,10 @@ public class Main {
 //            }));
 
 //        System.out.println(targetSumSubset(new int[]{4,2,3,1,7}, 4 ));
-        System.out.println(knapsack0_1(new int[]{2,5,1,3,4}, new int[]{15,14,10,45,30}, 9));
+//        System.out.println(knapsack0_1(new int[]{2,5,1,3,4}, new int[]{15,14,10,45,30}, 9));
+
+//        System.out.println(stock_01(new int[]{7,1,5,3,6,4}));
+        System.out.println(stock_02(new int[]{7,1,5,3,6,4}));
     }
 
 //-----------------------------------------------------------------------------------
@@ -626,7 +629,41 @@ public class Main {
     }
 
 //-----------------------------------------------------------------------------------
+    // 15) STOCK PROBLEM_1 - Given an array of traded prices, find the maximum profit possible
+    public static String stock_01(int[] prices){
+        int lowestPrice = Integer.MAX_VALUE, maxProfit = Integer.MIN_VALUE, buy = 0, sell = 0;
+
+        for(int i=0; i<prices.length; ++i){
+            if(prices[i] < lowestPrice){
+                lowestPrice = prices[i];
+                buy = prices[i];
+            }
+            int profitToday = prices[i]-lowestPrice;
+            if(profitToday > maxProfit){
+                maxProfit = profitToday;
+                sell = prices[i];
+            }
+        }
+        String ans = "Max Profit is Rs." + maxProfit + " when bought at Rs." + buy + " and sold at Rs." + sell;
+        return ans;
+    }
+
 //-----------------------------------------------------------------------------------
+    // 16) STOCK PROBLEM_2 - Same as above, except now you can do multiple transactions. But you need to buy, sell and then again buy...
+    public static int stock_02(int[] prices){
+        int buyDate=0, sellDate=0, totalProfit=0, currentLow = Integer.MAX_VALUE;
+        for(int i=1; i<prices.length; ++i){
+            if(prices[i] >= prices[i-1]){
+                sellDate++;
+            } else {
+                totalProfit += prices[sellDate] - prices[buyDate];
+                buyDate = i;
+                sellDate = i;
+            }
+        }
+        totalProfit += prices[sellDate] - prices[buyDate];
+        return totalProfit;
+    }
 //-----------------------------------------------------------------------------------
 //-----------------------------------------------------------------------------------
 //-----------------------------------------------------------------------------------

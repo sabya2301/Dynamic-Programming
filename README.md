@@ -17,3 +17,5 @@ Problems in order in the source code ->
 12) Maximum Gold Extraction(2D DP)
 13) Subsets of Array acheiving a target sum
 14) 0-1 Knapsack Problem
+15) Stock Problem 1
+16) Stock Problem 2
