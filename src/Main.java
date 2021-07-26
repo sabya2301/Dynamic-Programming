@@ -43,7 +43,11 @@ public class Main {
 //        System.out.println(knapsack0_1(new int[]{2,5,1,3,4}, new int[]{15,14,10,45,30}, 9));
 
 //        System.out.println(stock_01(new int[]{7,1,5,3,6,4}));
-        System.out.println(stock_02(new int[]{7,1,5,3,6,4}));
+//        System.out.println(stock_02(new int[]{7,1,5,3,6,4}));
+
+        System.out.println(maxSquareSubMatrix(new int[][]{
+                {0,1,0,1,0,1}, {1,0,1,0,1,0}, {0,1,1,1,1,1}, {0,0,1,1,1,0}, {1,1,1,1,1,1}
+        }));
     }
 
 //-----------------------------------------------------------------------------------
@@ -665,7 +669,27 @@ public class Main {
         return totalProfit;
     }
 //-----------------------------------------------------------------------------------
+    // 17) MAX SQUARE SUB MATRIX
+    public static int maxSquareSubMatrix(int[][] arr){
+        int[][] dp = new int[arr.length][arr[0].length];
+        int maxSize = 0;
+        for(int i=arr.length-1; i>=0; --i){
+            for(int j=arr[0].length-1; j>=0; --j){
+                if(arr[i][j] == 1){
+                    if(i==arr.length-1 || j == arr[0].length-1)
+                        dp[i][j] = arr[i][j];
+                    else{
+                        dp[i][j] = Math.min(dp[i+1][j+1], Math.min(dp[i+1][j], dp[i][j+1])) + 1;
+                    }
+                }
+                if(maxSize < dp[i][j])
+                    maxSize = dp[i][j];
+            }
+        }
+        return maxSize;
+    }
 //-----------------------------------------------------------------------------------
+    
 //-----------------------------------------------------------------------------------
 //-----------------------------------------------------------------------------------
 //-----------------------------------------------------------------------------------

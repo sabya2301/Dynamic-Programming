@@ -19,3 +19,4 @@ Problems in order in the source code ->
 14) 0-1 Knapsack Problem
 15) Stock Problem 1
 16) Stock Problem 2
+17) Maximum Square Sub-Matrix problem
