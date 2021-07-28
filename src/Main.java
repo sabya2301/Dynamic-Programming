@@ -45,9 +45,11 @@ public class Main {
 //        System.out.println(stock_01(new int[]{7,1,5,3,6,4}));
 //        System.out.println(stock_02(new int[]{7,1,5,3,6,4}));
 
-        System.out.println(maxSquareSubMatrix(new int[][]{
-                {0,1,0,1,0,1}, {1,0,1,0,1,0}, {0,1,1,1,1,1}, {0,0,1,1,1,0}, {1,1,1,1,1,1}
-        }));
+//        System.out.println(maxSquareSubMatrix(new int[][]{
+//                {0,1,0,1,0,1}, {1,0,1,0,1,0}, {0,1,1,1,1,1}, {0,0,1,1,1,0}, {1,1,1,1,1,1}
+//        }));
+
+        System.out.println(artihmaticArrays(new int[]{2,5,9,12,15,18,22,26,30,34,36,38,40,41}));
     }
 
 //-----------------------------------------------------------------------------------
@@ -85,6 +87,12 @@ public class Main {
         return c;
     }
 //-----------------------------------------------------------------------------------
+    // 3) CLIMBING STAIRS-2 -> Given an array representing no. of steps that can be jumped from that step, find paths
+    // possible to reach the top
+
+    
+//-----------------------------------------------------------------------------------
+
 
     // 3) ROBBING HOUSES - Cannot rob two adjacent houses. Find max money that can be robbed.
     public static int robHouseRecursion(int i, int[] arr, int[] strg) {
@@ -655,7 +663,7 @@ public class Main {
 //-----------------------------------------------------------------------------------
     // 16) STOCK PROBLEM_2 - Same as above, except now you can do multiple transactions. But you need to buy, sell and then again buy...
     public static int stock_02(int[] prices){
-        int buyDate=0, sellDate=0, totalProfit=0, currentLow = Integer.MAX_VALUE;
+        int buyDate=0, sellDate=0, totalProfit=0;
         for(int i=1; i<prices.length; ++i){
             if(prices[i] >= prices[i-1]){
                 sellDate++;
@@ -689,9 +697,25 @@ public class Main {
         return maxSize;
     }
 //-----------------------------------------------------------------------------------
-    
+    // 18) MAKE TWO STRINGS IDENTICAL -> Find the min. cost of making two strings identical, where cost of deleting a character from the string is given.
+    public static void makeStringsIdentical(){
+
+    }
 //-----------------------------------------------------------------------------------
+    // 19) COUNT NO. OF ARITHMETIC ARRAYS - Arrays containing atleast 3 elements and forming an AP
+    public static int artihmaticArrays(int[] arr){
+        int[] dp = new int[arr.length];
+        int count=0;
+        for(int i=2; i<dp.length; ++i){
+            if(arr[i]-arr[i-1] == arr[i-1]-arr[i-2]){
+                dp[i] = dp[i-1] + 1;
+                count += dp[i];
+            }
+        }
+        return count;
+    }
 //-----------------------------------------------------------------------------------
+    // 20)
 //-----------------------------------------------------------------------------------
 //-----------------------------------------------------------------------------------
 //-----------------------------------------------------------------------------------

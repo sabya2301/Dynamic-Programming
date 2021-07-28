@@ -20,3 +20,5 @@ Problems in order in the source code ->
 15) Stock Problem 1
 16) Stock Problem 2
 17) Maximum Square Sub-Matrix problem
+18) Make two strings identical(incomplete)
+19) Arithmatic Arrays count
