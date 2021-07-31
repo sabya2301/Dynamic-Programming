@@ -10,6 +10,8 @@ public class Main {
 
 //        System.out.println(climbingStairsRecursion(10));
 //        System.out.println(climbingStairsDP(10));
+//        System.out.println(climbStairsVariable(new int[]{3,3,0,2,2,3}));
+//        System.out.println(minStepRequired(new int[]{3,2,4,2,0,2,3,1,2,2}));
 
 //        System.out.println(robHouseRecursion(0, new int[]{1,4,3,5,100,101}, new int[7]));
 //        System.out.println(robHousesTopDownApproach(new int[]{1,4,3,5,100,101}));
@@ -49,7 +51,7 @@ public class Main {
 //                {0,1,0,1,0,1}, {1,0,1,0,1,0}, {0,1,1,1,1,1}, {0,0,1,1,1,0}, {1,1,1,1,1,1}
 //        }));
 
-        System.out.println(artihmaticArrays(new int[]{2,5,9,12,15,18,22,26,30,34,36,38,40,41}));
+//        System.out.println(artihmaticArrays(new int[]{2,5,9,12,15,18,22,26,30,34,36,38,40,41}));
     }
 
 //-----------------------------------------------------------------------------------
@@ -65,7 +67,7 @@ public class Main {
     }
 
 //-----------------------------------------------------------------------------------
-    // 2) CLIMBING STAIRS PROBLEM(can climb 1 or 2 stairs at a time. Find the maximum number of ways to reach a stair)
+    // 2) CLIMBING STAIRS PROBLEM 1(can climb 1 or 2 stairs at a time. Find the maximum number of ways to reach a stair)
     // SC - O(N^2) TC- O(N^2)
     public static int climbingStairsRecursion(int n) {
         if (n == 0) return 0;
@@ -89,12 +91,50 @@ public class Main {
 //-----------------------------------------------------------------------------------
     // 3) CLIMBING STAIRS-2 -> Given an array representing no. of steps that can be jumped from that step, find paths
     // possible to reach the top
+    public static int climbStairsVariable(int[] steps){
+        int n = steps.length;
+        int[] dp = new int[n+1];
+        dp[n] = 1;
+        for(int i=n-1; i>=0; --i){
+            for(int j=1; j<=steps[i]; ++j){
+                if(i+j < dp.length){
+                    dp[i] += dp[i+j];
+                }
+            }
+        }
+        return dp[0];
+    }
 
-    
+//-----------------------------------------------------------------------------------
+    // 4) CLIMBING STAIRS-3 -> Minimum Steps required to reach the final step
+    public static int minStepRequired(int [] steps){
+        int n = steps.length;
+        int[] dp = new int[n+1];
+        for(int i=0; i<dp.length; ++i)
+            dp[i]=-1;
+        dp[n] = 0;
+        for(int i=n-1; i>=0; --i){
+            if(steps[i] < 0) continue;
+            int min = Integer.MAX_VALUE;
+            for(int j=1; j<=steps[i] && i+j <dp.length; ++j){
+                if(dp[i+j] != -1)
+                    min = Math.min(dp[i+j], min);
+            }
+            if(min != Integer.MAX_VALUE)
+                dp[i] = min+1;
+        }
+        for(int i=0; i<steps.length; ++i) System.out.print(steps[i] + "  " );
+        System.out.println();
+
+        for(int i=0; i<dp.length; ++i) System.out.print(dp[i] + "  " );
+        System.out.println();
+        return dp[0];
+    }
+
 //-----------------------------------------------------------------------------------
 
 
-    // 3) ROBBING HOUSES - Cannot rob two adjacent houses. Find max money that can be robbed.
+    // 5) ROBBING HOUSES - Cannot rob two adjacent houses. Find max money that can be robbed.
     public static int robHouseRecursion(int i, int[] arr, int[] strg) {
         if (i >= arr.length) return 0;
         if (strg[i] != 0) return strg[i];
@@ -117,7 +157,7 @@ public class Main {
 
 //-----------------------------------------------------------------------------------
 
-    // 4) LONGEST INCREASING SUBSEQUENCE IN AN ARRAY
+    // 6) LONGEST INCREASING SUBSEQUENCE IN AN ARRAY
     public static int longestIncreasingSubsequence(int[] arr) {
         int[] dp = new int[arr.length];
         int maxLIS = 0;
@@ -145,7 +185,7 @@ public class Main {
     }
 
 //-----------------------------------------------------------------------------------
-    // 5) LONGEST SUM SUBSEQUENCE -> Print the largest sum possible such that numbers are in increasing order
+    // 7) LONGEST SUM SUBSEQUENCE -> Print the largest sum possible such that numbers are in increasing order
     //SC - O(N), TC - O(N^2)
     public static int longestSumSubsequence(int[] arr) {
         int max = Integer.MIN_VALUE;
@@ -168,7 +208,7 @@ public class Main {
     }
 
 //-----------------------------------------------------------------------------------
-    // 6) LONGEST BITONIC SEQUENCE
+    // 8) LONGEST BITONIC SEQUENCE
     public static int longestBitonicSeq(int[] arr) {
         int[] LIS = new int[arr.length];    //DP array to store Longest Increasing Seq. Array
         int[] LDS = new int[arr.length];    //DP array to store Longest Decreasing Seq. Array
@@ -221,7 +261,7 @@ public class Main {
     }
 
 //-----------------------------------------------------------------------------------
-    /* 7) MAX NO. OF NON-OVERLAPPING BRIDGE -> Given co-ordinates of bridges, find max no. of bridges that do no overlap
+    /* 9) MAX NO. OF NON-OVERLAPPING BRIDGE -> Given co-ordinates of bridges, find max no. of bridges that do no overlap
        [6,2],[4,3], [2,6], [1,5] -> x,y co-ordinates.
        ans -> 2
     */
@@ -269,7 +309,7 @@ public class Main {
     }
 
 //-----------------------------------------------------------------------------------
-    /* 8) RUSSIAN DOLL PROBLEM/ ENVELOPE PROBLEM -> Given the length and breadth of envelopes,
+    /* 10) RUSSIAN DOLL PROBLEM/ ENVELOPE PROBLEM -> Given the length and breadth of envelopes,
             find the maximum number of envelopes that can be nested    */
     // SC- O(N), T.C- O(N^2)
     public static int russianDoll(int[][] arr){
@@ -312,7 +352,7 @@ public class Main {
     }
 
 //-----------------------------------------------------------------------------------
-    // 9) PALINDROMIC SUB-STRING
+    // 11) PALINDROMIC SUB-STRING
     // SC- O(N^2), TC- O(N^2)
     public static int palindromicSubstringCount(String str){
         int[][] dp = new int[str.length()][str.length()];
@@ -350,7 +390,7 @@ public class Main {
     }
 
 //-----------------------------------------------------------------------------------
-    /* 10) LEAST COSTLY PATH -> Given a 2D matrix, find the least costly path to move from top left corner to bottom left.
+    /* 12) LEAST COSTLY PATH -> Given a 2D matrix, find the least costly path to move from top left corner to bottom left.
            You can only move in horizontal or vertical path. Cost of a cell is its value. */
     //watch riya bansal dp-4 for future reference
     public static String leastCostlyPath(int[][] arr){
@@ -409,7 +449,7 @@ public class Main {
 
     }
 //-----------------------------------------------------------------------------------
-    // 11) COUNT NUMBER OF DISTINCT SUBSTRINGS.
+    // 13) COUNT NUMBER OF DISTINCT SUBSTRINGS.
     // TC - O(N), SC- O(N)
     public static int distinctSubstringCount(String str){
         int[] dp = new int[str.length()+1];
@@ -427,7 +467,7 @@ public class Main {
         return dp[dp.length-1];
     }
 //-----------------------------------------------------------------------------------
-    // 12) MAX GOLD EXTRACTED -> Starting from anywhere on the first column, find the maximum gold that can be extracted,
+    // 14) MAX GOLD EXTRACTED -> Starting from anywhere on the first column, find the maximum gold that can be extracted,
     //      given that you can only move diagonally forward and horizantally forward.
     //      Also print all the possible paths.
     // TC - O(M*N), S.C - O(M*N)
@@ -518,7 +558,7 @@ public class Main {
     }
 
 //-----------------------------------------------------------------------------------
-    // 13) PRINT ALL SUBSETS OF AN ARRAY WHICH ADD UP TO A TARGET
+    // 15) PRINT ALL SUBSETS OF AN ARRAY WHICH ADD UP TO A TARGET
     public static String targetSumSubset(int[] arr, int target){
 
         class Pair{
@@ -580,7 +620,7 @@ public class Main {
     }
 
 //-----------------------------------------------------------------------------------
-    // 14) 0-1 KNAPSACK PROBLEM
+    // 16) 0-1 KNAPSACK PROBLEM
     public static String knapsack0_1(int[] values, int[] weights, int capacity){
 
         class Pair{
@@ -641,7 +681,7 @@ public class Main {
     }
 
 //-----------------------------------------------------------------------------------
-    // 15) STOCK PROBLEM_1 - Given an array of traded prices, find the maximum profit possible
+    // 17) STOCK PROBLEM_1 - Given an array of traded prices, find the maximum profit possible
     public static String stock_01(int[] prices){
         int lowestPrice = Integer.MAX_VALUE, maxProfit = Integer.MIN_VALUE, buy = 0, sell = 0;
 
@@ -661,7 +701,7 @@ public class Main {
     }
 
 //-----------------------------------------------------------------------------------
-    // 16) STOCK PROBLEM_2 - Same as above, except now you can do multiple transactions. But you need to buy, sell and then again buy...
+    // 18) STOCK PROBLEM_2 - Same as above, except now you can do multiple transactions. But you need to buy, sell and then again buy...
     public static int stock_02(int[] prices){
         int buyDate=0, sellDate=0, totalProfit=0;
         for(int i=1; i<prices.length; ++i){
@@ -677,7 +717,7 @@ public class Main {
         return totalProfit;
     }
 //-----------------------------------------------------------------------------------
-    // 17) MAX SQUARE SUB MATRIX
+    // 19) MAX SQUARE SUB MATRIX
     public static int maxSquareSubMatrix(int[][] arr){
         int[][] dp = new int[arr.length][arr[0].length];
         int maxSize = 0;
@@ -697,12 +737,12 @@ public class Main {
         return maxSize;
     }
 //-----------------------------------------------------------------------------------
-    // 18) MAKE TWO STRINGS IDENTICAL -> Find the min. cost of making two strings identical, where cost of deleting a character from the string is given.
+    // 20) MAKE TWO STRINGS IDENTICAL -> Find the min. cost of making two strings identical, where cost of deleting a character from the string is given.
     public static void makeStringsIdentical(){
 
     }
 //-----------------------------------------------------------------------------------
-    // 19) COUNT NO. OF ARITHMETIC ARRAYS - Arrays containing atleast 3 elements and forming an AP
+    // 21) COUNT NO. OF ARITHMETIC ARRAYS - Arrays containing atleast 3 elements and forming an AP
     public static int artihmaticArrays(int[] arr){
         int[] dp = new int[arr.length];
         int count=0;
@@ -715,7 +755,7 @@ public class Main {
         return count;
     }
 //-----------------------------------------------------------------------------------
-    // 20)
+    // 22)
 //-----------------------------------------------------------------------------------
 //-----------------------------------------------------------------------------------
 //-----------------------------------------------------------------------------------
