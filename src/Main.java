@@ -52,6 +52,7 @@ public class Main {
 //        }));
 
 //        System.out.println(artihmaticArrays(new int[]{2,5,9,12,15,18,22,26,30,34,36,38,40,41}));
+        System.out.println(coinChangeCombinations(new int[]{3, 2 ,5} , 7));
     }
 
 //-----------------------------------------------------------------------------------
@@ -132,8 +133,6 @@ public class Main {
     }
 
 //-----------------------------------------------------------------------------------
-
-
     // 5) ROBBING HOUSES - Cannot rob two adjacent houses. Find max money that can be robbed.
     public static int robHouseRecursion(int i, int[] arr, int[] strg) {
         if (i >= arr.length) return 0;
@@ -755,7 +754,20 @@ public class Main {
         return count;
     }
 //-----------------------------------------------------------------------------------
-    // 22)
+    // 22) COIN CHANGE COMBINATIONS - Given an unlimited supply of coins, find if a target is achievable
+    public static String coinChangeCombinations(int[] coins, int amount){
+        int[] dp = new int[amount+1];
+        dp[0] = 1;
+        for(int i=0; i<coins.length; ++i){
+            for(int j=coins[i]; j<dp.length; ++j){
+                dp[j] += dp[j-coins[i]];
+            }
+        }
+        for(int combinations: dp){
+            System.out.print(combinations + " ");
+        }
+        return ("\n"+ dp[amount] + " combinations are possible");
+    }
 //-----------------------------------------------------------------------------------
 //-----------------------------------------------------------------------------------
 //-----------------------------------------------------------------------------------
