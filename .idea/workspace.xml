@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30a55ba3-6c87-41c0-9c01-34dd15964c60" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -17,8 +18,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2148">
-              <caret line="764" column="9" lean-forward="true" selection-start-line="764" selection-start-column="9" selection-end-line="764" selection-end-column="9" />
+            <state relative-caret-position="-735">
+              <caret line="56" column="74" selection-start-line="56" selection-start-column="74" selection-end-line="56" selection-end-column="74" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#fibonacci#0;class#Main#0" />
@@ -35,10 +36,15 @@
                 <element signature="method#russianDoll#0;class#Main#0" />
                 <element signature="method#palindromicSubstringCount#0;class#Main#0" />
                 <element signature="method#leastCostlyPath#0;class#Main#0" />
+                <element signature="e#15668#15680#0" expanded="true" />
                 <element signature="method#distinctSubstringCount#0;class#Main#0" />
+                <element signature="e#17326#17346#0" expanded="true" />
                 <element signature="method#goldMineExtract#0;class#Main#0" />
+                <element signature="e#19239#19253#0" expanded="true" />
                 <element signature="method#targetSumSubset#0;class#Main#0" />
+                <element signature="e#23300#23306#0" expanded="true" />
                 <element signature="method#knapsack0_1#0;class#Main#0" />
+                <element signature="e#25511#25517#0" expanded="true" />
                 <element signature="method#stock_01#0;class#Main#0" />
                 <element signature="method#stock_02#0;class#Main#0" />
                 <element signature="method#maxSquareSubMatrix#0;class#Main#0" />
@@ -200,7 +206,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>160</line>
+          <line>162</line>
           <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
@@ -209,6 +215,44 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12869">
+          <caret line="757" column="72" selection-start-line="757" selection-start-column="72" selection-end-line="757" selection-end-column="72" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#fibonacci#0;class#Main#0" />
+            <element signature="method#climbingStairsRecursion#0;class#Main#0" />
+            <element signature="method#climbingStairsDP#0;class#Main#0" />
+            <element signature="method#climbStairsVariable#0;class#Main#0" />
+            <element signature="method#minStepRequired#0;class#Main#0" />
+            <element signature="method#robHouseRecursion#0;class#Main#0" />
+            <element signature="method#robHousesTopDownApproach#0;class#Main#0" />
+            <element signature="method#longestIncreasingSubsequence#0;class#Main#0" />
+            <element signature="method#longestSumSubsequence#0;class#Main#0" />
+            <element signature="method#longestBitonicSeq#0;class#Main#0" />
+            <element signature="method#nonOverlappingBridges#0;class#Main#0" />
+            <element signature="method#russianDoll#0;class#Main#0" />
+            <element signature="method#palindromicSubstringCount#0;class#Main#0" />
+            <element signature="method#leastCostlyPath#0;class#Main#0" />
+            <element signature="e#15668#15680#0" expanded="true" />
+            <element signature="method#distinctSubstringCount#0;class#Main#0" />
+            <element signature="e#17326#17346#0" expanded="true" />
+            <element signature="method#goldMineExtract#0;class#Main#0" />
+            <element signature="e#19239#19253#0" expanded="true" />
+            <element signature="method#targetSumSubset#0;class#Main#0" />
+            <element signature="e#23300#23306#0" expanded="true" />
+            <element signature="method#knapsack0_1#0;class#Main#0" />
+            <element signature="e#25511#25517#0" expanded="true" />
+            <element signature="method#stock_01#0;class#Main#0" />
+            <element signature="method#stock_02#0;class#Main#0" />
+            <element signature="method#maxSquareSubMatrix#0;class#Main#0" />
+            <element signature="method#makeStringsIdentical#0;class#Main#0" />
+            <element signature="method#artihmaticArrays#0;class#Main#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1309">
@@ -229,10 +273,15 @@
             <element signature="method#russianDoll#0;class#Main#0" />
             <element signature="method#palindromicSubstringCount#0;class#Main#0" />
             <element signature="method#leastCostlyPath#0;class#Main#0" />
+            <element signature="e#15668#15680#0" expanded="true" />
             <element signature="method#distinctSubstringCount#0;class#Main#0" />
+            <element signature="e#17326#17346#0" expanded="true" />
             <element signature="method#goldMineExtract#0;class#Main#0" />
+            <element signature="e#19239#19253#0" expanded="true" />
             <element signature="method#targetSumSubset#0;class#Main#0" />
+            <element signature="e#23300#23306#0" expanded="true" />
             <element signature="method#knapsack0_1#0;class#Main#0" />
+            <element signature="e#25511#25517#0" expanded="true" />
             <element signature="method#stock_01#0;class#Main#0" />
             <element signature="method#stock_02#0;class#Main#0" />
             <element signature="method#maxSquareSubMatrix#0;class#Main#0" />
@@ -262,10 +311,15 @@
             <element signature="method#russianDoll#0;class#Main#0" />
             <element signature="method#palindromicSubstringCount#0;class#Main#0" />
             <element signature="method#leastCostlyPath#0;class#Main#0" />
+            <element signature="e#15668#15680#0" expanded="true" />
             <element signature="method#distinctSubstringCount#0;class#Main#0" />
+            <element signature="e#17326#17346#0" expanded="true" />
             <element signature="method#goldMineExtract#0;class#Main#0" />
+            <element signature="e#19239#19253#0" expanded="true" />
             <element signature="method#targetSumSubset#0;class#Main#0" />
+            <element signature="e#23300#23306#0" expanded="true" />
             <element signature="method#knapsack0_1#0;class#Main#0" />
+            <element signature="e#25511#25517#0" expanded="true" />
             <element signature="method#stock_01#0;class#Main#0" />
             <element signature="method#stock_02#0;class#Main#0" />
             <element signature="method#maxSquareSubMatrix#0;class#Main#0" />
@@ -295,10 +349,15 @@
             <element signature="method#russianDoll#0;class#Main#0" />
             <element signature="method#palindromicSubstringCount#0;class#Main#0" />
             <element signature="method#leastCostlyPath#0;class#Main#0" />
+            <element signature="e#15668#15680#0" expanded="true" />
             <element signature="method#distinctSubstringCount#0;class#Main#0" />
+            <element signature="e#17326#17346#0" expanded="true" />
             <element signature="method#goldMineExtract#0;class#Main#0" />
+            <element signature="e#19239#19253#0" expanded="true" />
             <element signature="method#targetSumSubset#0;class#Main#0" />
+            <element signature="e#23300#23306#0" expanded="true" />
             <element signature="method#knapsack0_1#0;class#Main#0" />
+            <element signature="e#25511#25517#0" expanded="true" />
             <element signature="method#stock_01#0;class#Main#0" />
             <element signature="method#stock_02#0;class#Main#0" />
             <element signature="method#maxSquareSubMatrix#0;class#Main#0" />
@@ -328,10 +387,15 @@
             <element signature="method#russianDoll#0;class#Main#0" />
             <element signature="method#palindromicSubstringCount#0;class#Main#0" />
             <element signature="method#leastCostlyPath#0;class#Main#0" />
+            <element signature="e#15668#15680#0" expanded="true" />
             <element signature="method#distinctSubstringCount#0;class#Main#0" />
+            <element signature="e#17326#17346#0" expanded="true" />
             <element signature="method#goldMineExtract#0;class#Main#0" />
+            <element signature="e#19239#19253#0" expanded="true" />
             <element signature="method#targetSumSubset#0;class#Main#0" />
+            <element signature="e#23300#23306#0" expanded="true" />
             <element signature="method#knapsack0_1#0;class#Main#0" />
+            <element signature="e#25511#25517#0" expanded="true" />
             <element signature="method#stock_01#0;class#Main#0" />
             <element signature="method#stock_02#0;class#Main#0" />
             <element signature="method#maxSquareSubMatrix#0;class#Main#0" />
@@ -361,10 +425,15 @@
             <element signature="method#russianDoll#0;class#Main#0" />
             <element signature="method#palindromicSubstringCount#0;class#Main#0" />
             <element signature="method#leastCostlyPath#0;class#Main#0" />
+            <element signature="e#15668#15680#0" expanded="true" />
             <element signature="method#distinctSubstringCount#0;class#Main#0" />
+            <element signature="e#17326#17346#0" expanded="true" />
             <element signature="method#goldMineExtract#0;class#Main#0" />
+            <element signature="e#19239#19253#0" expanded="true" />
             <element signature="method#targetSumSubset#0;class#Main#0" />
+            <element signature="e#23300#23306#0" expanded="true" />
             <element signature="method#knapsack0_1#0;class#Main#0" />
+            <element signature="e#25511#25517#0" expanded="true" />
             <element signature="method#stock_01#0;class#Main#0" />
             <element signature="method#stock_02#0;class#Main#0" />
             <element signature="method#maxSquareSubMatrix#0;class#Main#0" />
@@ -394,10 +463,15 @@
             <element signature="method#russianDoll#0;class#Main#0" />
             <element signature="method#palindromicSubstringCount#0;class#Main#0" />
             <element signature="method#leastCostlyPath#0;class#Main#0" />
+            <element signature="e#15668#15680#0" expanded="true" />
             <element signature="method#distinctSubstringCount#0;class#Main#0" />
+            <element signature="e#17326#17346#0" expanded="true" />
             <element signature="method#goldMineExtract#0;class#Main#0" />
+            <element signature="e#19239#19253#0" expanded="true" />
             <element signature="method#targetSumSubset#0;class#Main#0" />
+            <element signature="e#23300#23306#0" expanded="true" />
             <element signature="method#knapsack0_1#0;class#Main#0" />
+            <element signature="e#25511#25517#0" expanded="true" />
             <element signature="method#stock_01#0;class#Main#0" />
             <element signature="method#stock_02#0;class#Main#0" />
             <element signature="method#maxSquareSubMatrix#0;class#Main#0" />
@@ -427,10 +501,15 @@
             <element signature="method#russianDoll#0;class#Main#0" />
             <element signature="method#palindromicSubstringCount#0;class#Main#0" />
             <element signature="method#leastCostlyPath#0;class#Main#0" />
+            <element signature="e#15668#15680#0" expanded="true" />
             <element signature="method#distinctSubstringCount#0;class#Main#0" />
+            <element signature="e#17326#17346#0" expanded="true" />
             <element signature="method#goldMineExtract#0;class#Main#0" />
+            <element signature="e#19239#19253#0" expanded="true" />
             <element signature="method#targetSumSubset#0;class#Main#0" />
+            <element signature="e#23300#23306#0" expanded="true" />
             <element signature="method#knapsack0_1#0;class#Main#0" />
+            <element signature="e#25511#25517#0" expanded="true" />
             <element signature="method#stock_01#0;class#Main#0" />
             <element signature="method#stock_02#0;class#Main#0" />
             <element signature="method#maxSquareSubMatrix#0;class#Main#0" />
@@ -460,10 +539,15 @@
             <element signature="method#russianDoll#0;class#Main#0" />
             <element signature="method#palindromicSubstringCount#0;class#Main#0" />
             <element signature="method#leastCostlyPath#0;class#Main#0" />
+            <element signature="e#15668#15680#0" expanded="true" />
             <element signature="method#distinctSubstringCount#0;class#Main#0" />
+            <element signature="e#17326#17346#0" expanded="true" />
             <element signature="method#goldMineExtract#0;class#Main#0" />
+            <element signature="e#19239#19253#0" expanded="true" />
             <element signature="method#targetSumSubset#0;class#Main#0" />
+            <element signature="e#23300#23306#0" expanded="true" />
             <element signature="method#knapsack0_1#0;class#Main#0" />
+            <element signature="e#25511#25517#0" expanded="true" />
             <element signature="method#stock_01#0;class#Main#0" />
             <element signature="method#stock_02#0;class#Main#0" />
             <element signature="method#maxSquareSubMatrix#0;class#Main#0" />
@@ -493,10 +577,15 @@
             <element signature="method#russianDoll#0;class#Main#0" />
             <element signature="method#palindromicSubstringCount#0;class#Main#0" />
             <element signature="method#leastCostlyPath#0;class#Main#0" />
+            <element signature="e#15668#15680#0" expanded="true" />
             <element signature="method#distinctSubstringCount#0;class#Main#0" />
+            <element signature="e#17326#17346#0" expanded="true" />
             <element signature="method#goldMineExtract#0;class#Main#0" />
+            <element signature="e#19239#19253#0" expanded="true" />
             <element signature="method#targetSumSubset#0;class#Main#0" />
+            <element signature="e#23300#23306#0" expanded="true" />
             <element signature="method#knapsack0_1#0;class#Main#0" />
+            <element signature="e#25511#25517#0" expanded="true" />
             <element signature="method#stock_01#0;class#Main#0" />
             <element signature="method#stock_02#0;class#Main#0" />
             <element signature="method#maxSquareSubMatrix#0;class#Main#0" />
@@ -526,10 +615,15 @@
             <element signature="method#russianDoll#0;class#Main#0" />
             <element signature="method#palindromicSubstringCount#0;class#Main#0" />
             <element signature="method#leastCostlyPath#0;class#Main#0" />
+            <element signature="e#15668#15680#0" expanded="true" />
             <element signature="method#distinctSubstringCount#0;class#Main#0" />
+            <element signature="e#17326#17346#0" expanded="true" />
             <element signature="method#goldMineExtract#0;class#Main#0" />
+            <element signature="e#19239#19253#0" expanded="true" />
             <element signature="method#targetSumSubset#0;class#Main#0" />
+            <element signature="e#23300#23306#0" expanded="true" />
             <element signature="method#knapsack0_1#0;class#Main#0" />
+            <element signature="e#25511#25517#0" expanded="true" />
             <element signature="method#stock_01#0;class#Main#0" />
             <element signature="method#stock_02#0;class#Main#0" />
             <element signature="method#maxSquareSubMatrix#0;class#Main#0" />
@@ -559,10 +653,15 @@
             <element signature="method#russianDoll#0;class#Main#0" />
             <element signature="method#palindromicSubstringCount#0;class#Main#0" />
             <element signature="method#leastCostlyPath#0;class#Main#0" />
+            <element signature="e#15668#15680#0" expanded="true" />
             <element signature="method#distinctSubstringCount#0;class#Main#0" />
+            <element signature="e#17326#17346#0" expanded="true" />
             <element signature="method#goldMineExtract#0;class#Main#0" />
+            <element signature="e#19239#19253#0" expanded="true" />
             <element signature="method#targetSumSubset#0;class#Main#0" />
+            <element signature="e#23300#23306#0" expanded="true" />
             <element signature="method#knapsack0_1#0;class#Main#0" />
+            <element signature="e#25511#25517#0" expanded="true" />
             <element signature="method#stock_01#0;class#Main#0" />
             <element signature="method#stock_02#0;class#Main#0" />
             <element signature="method#maxSquareSubMatrix#0;class#Main#0" />
@@ -592,10 +691,15 @@
             <element signature="method#russianDoll#0;class#Main#0" />
             <element signature="method#palindromicSubstringCount#0;class#Main#0" />
             <element signature="method#leastCostlyPath#0;class#Main#0" />
+            <element signature="e#15668#15680#0" expanded="true" />
             <element signature="method#distinctSubstringCount#0;class#Main#0" />
+            <element signature="e#17326#17346#0" expanded="true" />
             <element signature="method#goldMineExtract#0;class#Main#0" />
+            <element signature="e#19239#19253#0" expanded="true" />
             <element signature="method#targetSumSubset#0;class#Main#0" />
+            <element signature="e#23300#23306#0" expanded="true" />
             <element signature="method#knapsack0_1#0;class#Main#0" />
+            <element signature="e#25511#25517#0" expanded="true" />
             <element signature="method#stock_01#0;class#Main#0" />
             <element signature="method#stock_02#0;class#Main#0" />
             <element signature="method#maxSquareSubMatrix#0;class#Main#0" />
@@ -625,10 +729,15 @@
             <element signature="method#russianDoll#0;class#Main#0" />
             <element signature="method#palindromicSubstringCount#0;class#Main#0" />
             <element signature="method#leastCostlyPath#0;class#Main#0" />
+            <element signature="e#15668#15680#0" expanded="true" />
             <element signature="method#distinctSubstringCount#0;class#Main#0" />
+            <element signature="e#17326#17346#0" expanded="true" />
             <element signature="method#goldMineExtract#0;class#Main#0" />
+            <element signature="e#19239#19253#0" expanded="true" />
             <element signature="method#targetSumSubset#0;class#Main#0" />
+            <element signature="e#23300#23306#0" expanded="true" />
             <element signature="method#knapsack0_1#0;class#Main#0" />
+            <element signature="e#25511#25517#0" expanded="true" />
             <element signature="method#stock_01#0;class#Main#0" />
             <element signature="method#stock_02#0;class#Main#0" />
             <element signature="method#maxSquareSubMatrix#0;class#Main#0" />
@@ -658,10 +767,15 @@
             <element signature="method#russianDoll#0;class#Main#0" />
             <element signature="method#palindromicSubstringCount#0;class#Main#0" />
             <element signature="method#leastCostlyPath#0;class#Main#0" />
+            <element signature="e#15668#15680#0" expanded="true" />
             <element signature="method#distinctSubstringCount#0;class#Main#0" />
+            <element signature="e#17326#17346#0" expanded="true" />
             <element signature="method#goldMineExtract#0;class#Main#0" />
+            <element signature="e#19239#19253#0" expanded="true" />
             <element signature="method#targetSumSubset#0;class#Main#0" />
+            <element signature="e#23300#23306#0" expanded="true" />
             <element signature="method#knapsack0_1#0;class#Main#0" />
+            <element signature="e#25511#25517#0" expanded="true" />
             <element signature="method#stock_01#0;class#Main#0" />
             <element signature="method#stock_02#0;class#Main#0" />
             <element signature="method#maxSquareSubMatrix#0;class#Main#0" />
@@ -695,8 +809,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2148">
-          <caret line="764" column="9" lean-forward="true" selection-start-line="764" selection-start-column="9" selection-end-line="764" selection-end-column="9" />
+        <state relative-caret-position="-735">
+          <caret line="56" column="74" selection-start-line="56" selection-start-column="74" selection-end-line="56" selection-end-column="74" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#fibonacci#0;class#Main#0" />
@@ -713,10 +827,15 @@
             <element signature="method#russianDoll#0;class#Main#0" />
             <element signature="method#palindromicSubstringCount#0;class#Main#0" />
             <element signature="method#leastCostlyPath#0;class#Main#0" />
+            <element signature="e#15668#15680#0" expanded="true" />
             <element signature="method#distinctSubstringCount#0;class#Main#0" />
+            <element signature="e#17326#17346#0" expanded="true" />
             <element signature="method#goldMineExtract#0;class#Main#0" />
+            <element signature="e#19239#19253#0" expanded="true" />
             <element signature="method#targetSumSubset#0;class#Main#0" />
+            <element signature="e#23300#23306#0" expanded="true" />
             <element signature="method#knapsack0_1#0;class#Main#0" />
+            <element signature="e#25511#25517#0" expanded="true" />
             <element signature="method#stock_01#0;class#Main#0" />
             <element signature="method#stock_02#0;class#Main#0" />
             <element signature="method#maxSquareSubMatrix#0;class#Main#0" />

@@ -52,7 +52,9 @@ public class Main {
 //        }));
 
 //        System.out.println(artihmaticArrays(new int[]{2,5,9,12,15,18,22,26,30,34,36,38,40,41}));
-        System.out.println(coinChangeCombinations(new int[]{3, 2 ,5} , 7));
+
+//        System.out.println(coinChangeCombinations(new int[]{3, 2 ,5} , 7));
+        System.out.println(coinChangePermutations(new int[]{3, 2 ,5} , 7));
     }
 
 //-----------------------------------------------------------------------------------
@@ -769,6 +771,17 @@ public class Main {
         return ("\n"+ dp[amount] + " combinations are possible");
     }
 //-----------------------------------------------------------------------------------
+    public static int coinChangePermutations(int[] coins, int amount){
+        int[] dp = new int[amount+1];
+        dp[0] = 1;
+        for(int i=0; i<dp.length; ++i){
+            for(int coin: coins){
+                if(i >= coin)
+                    dp[i] += dp[i-coin];
+            }
+        }
+        return dp[amount];
+    }
 //-----------------------------------------------------------------------------------
 //-----------------------------------------------------------------------------------
 //-----------------------------------------------------------------------------------
