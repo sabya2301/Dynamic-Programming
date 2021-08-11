@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="30a55ba3-6c87-41c0-9c01-34dd15964c60" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -18,8 +19,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="789" column="134" selection-start-line="789" selection-start-column="134" selection-end-line="789" selection-end-column="134" />
+            <state relative-caret-position="122">
+              <caret line="45" column="46" selection-start-line="45" selection-start-column="46" selection-end-line="45" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#fibonacci#0;class#Main#0" />
@@ -47,6 +48,7 @@
                 <element signature="method#artihmaticArrays#0;class#Main#0" />
                 <element signature="method#coinChangeCombinations#0;class#Main#0" />
                 <element signature="method#coinChangePermutations#0;class#Main#0" />
+                <element signature="method#binaryStrings#0;class#Main#0" />
               </folding>
             </state>
           </provider>
@@ -163,36 +165,36 @@
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info id="Azure Explorer" order="2" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.3290938" />
-      <window_info anchor="right" id="Maven Projects" order="4" />
-      <window_info anchor="bottom" id="Azure Activity Log" order="8" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="9" weight="0.3290938" />
+      <window_info id="Azure Explorer" order="2" />
       <window_info anchor="right" id="Palette&#9;" order="5" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.3290938" />
+      <window_info anchor="right" id="Maven Projects" order="4" />
       <window_info anchor="bottom" id="HDInsight Spark Submission" order="10" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.37360892" />
       <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.37360892" />
+      <window_info anchor="bottom" id="Azure Activity Log" order="8" />
       <window_info anchor="bottom" id="Terminal" order="12" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="2" />
       <window_info content_ui="combo" id="Project" order="0" weight="0.24963397" />
       <window_info anchor="bottom" id="Remote Spark Job in Cluster" order="13" />
       <window_info anchor="bottom" id="Debug Remote Spark Job in Cluster" order="14" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.3290938" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3290938" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3290938" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -203,7 +205,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>165</line>
+          <line>166</line>
           <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
@@ -212,6 +214,78 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11747">
+          <caret line="691" column="54" selection-start-line="691" selection-start-column="54" selection-end-line="691" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#fibonacci#0;class#Main#0" />
+            <element signature="method#climbingStairsRecursion#0;class#Main#0" />
+            <element signature="method#climbingStairsDP#0;class#Main#0" />
+            <element signature="method#climbStairsVariable#0;class#Main#0" />
+            <element signature="method#minStepRequired#0;class#Main#0" />
+            <element signature="method#robHouseRecursion#0;class#Main#0" />
+            <element signature="method#robHousesTopDownApproach#0;class#Main#0" />
+            <element signature="method#longestIncreasingSubsequence#0;class#Main#0" />
+            <element signature="method#longestSumSubsequence#0;class#Main#0" />
+            <element signature="method#longestBitonicSeq#0;class#Main#0" />
+            <element signature="method#nonOverlappingBridges#0;class#Main#0" />
+            <element signature="method#russianDoll#0;class#Main#0" />
+            <element signature="method#palindromicSubstringCount#0;class#Main#0" />
+            <element signature="method#leastCostlyPath#0;class#Main#0" />
+            <element signature="method#distinctSubstringCount#0;class#Main#0" />
+            <element signature="method#goldMineExtract#0;class#Main#0" />
+            <element signature="method#targetSumSubset#0;class#Main#0" />
+            <element signature="method#knapsack0_1#0;class#Main#0" />
+            <element signature="method#stock_01#0;class#Main#0" />
+            <element signature="method#stock_02#0;class#Main#0" />
+            <element signature="method#maxSquareSubMatrix#0;class#Main#0" />
+            <element signature="method#makeStringsIdentical#0;class#Main#0" />
+            <element signature="method#artihmaticArrays#0;class#Main#0" />
+            <element signature="method#coinChangeCombinations#0;class#Main#0" />
+            <element signature="method#coinChangePermutations#0;class#Main#0" />
+            <element signature="method#binaryStrings#0;class#Main#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10659">
+          <caret line="627" column="79" lean-forward="true" selection-start-line="627" selection-start-column="79" selection-end-line="627" selection-end-column="79" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#fibonacci#0;class#Main#0" />
+            <element signature="method#climbingStairsRecursion#0;class#Main#0" />
+            <element signature="method#climbingStairsDP#0;class#Main#0" />
+            <element signature="method#climbStairsVariable#0;class#Main#0" />
+            <element signature="method#minStepRequired#0;class#Main#0" />
+            <element signature="method#robHouseRecursion#0;class#Main#0" />
+            <element signature="method#robHousesTopDownApproach#0;class#Main#0" />
+            <element signature="method#longestIncreasingSubsequence#0;class#Main#0" />
+            <element signature="method#longestSumSubsequence#0;class#Main#0" />
+            <element signature="method#longestBitonicSeq#0;class#Main#0" />
+            <element signature="method#nonOverlappingBridges#0;class#Main#0" />
+            <element signature="method#russianDoll#0;class#Main#0" />
+            <element signature="method#palindromicSubstringCount#0;class#Main#0" />
+            <element signature="method#leastCostlyPath#0;class#Main#0" />
+            <element signature="method#distinctSubstringCount#0;class#Main#0" />
+            <element signature="method#goldMineExtract#0;class#Main#0" />
+            <element signature="method#targetSumSubset#0;class#Main#0" />
+            <element signature="method#knapsack0_1#0;class#Main#0" />
+            <element signature="method#stock_01#0;class#Main#0" />
+            <element signature="method#stock_02#0;class#Main#0" />
+            <element signature="method#maxSquareSubMatrix#0;class#Main#0" />
+            <element signature="method#makeStringsIdentical#0;class#Main#0" />
+            <element signature="method#artihmaticArrays#0;class#Main#0" />
+            <element signature="method#coinChangeCombinations#0;class#Main#0" />
+            <element signature="method#coinChangePermutations#0;class#Main#0" />
+            <element signature="method#binaryStrings#0;class#Main#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="935">
@@ -243,6 +317,7 @@
             <element signature="method#artihmaticArrays#0;class#Main#0" />
             <element signature="method#coinChangeCombinations#0;class#Main#0" />
             <element signature="method#coinChangePermutations#0;class#Main#0" />
+            <element signature="method#binaryStrings#0;class#Main#0" />
           </folding>
         </state>
       </provider>
@@ -278,6 +353,7 @@
             <element signature="method#artihmaticArrays#0;class#Main#0" />
             <element signature="method#coinChangeCombinations#0;class#Main#0" />
             <element signature="method#coinChangePermutations#0;class#Main#0" />
+            <element signature="method#binaryStrings#0;class#Main#0" />
           </folding>
         </state>
       </provider>
@@ -313,6 +389,7 @@
             <element signature="method#artihmaticArrays#0;class#Main#0" />
             <element signature="method#coinChangeCombinations#0;class#Main#0" />
             <element signature="method#coinChangePermutations#0;class#Main#0" />
+            <element signature="method#binaryStrings#0;class#Main#0" />
           </folding>
         </state>
       </provider>
@@ -348,6 +425,7 @@
             <element signature="method#artihmaticArrays#0;class#Main#0" />
             <element signature="method#coinChangeCombinations#0;class#Main#0" />
             <element signature="method#coinChangePermutations#0;class#Main#0" />
+            <element signature="method#binaryStrings#0;class#Main#0" />
           </folding>
         </state>
       </provider>
@@ -383,6 +461,7 @@
             <element signature="method#artihmaticArrays#0;class#Main#0" />
             <element signature="method#coinChangeCombinations#0;class#Main#0" />
             <element signature="method#coinChangePermutations#0;class#Main#0" />
+            <element signature="method#binaryStrings#0;class#Main#0" />
           </folding>
         </state>
       </provider>
@@ -418,6 +497,7 @@
             <element signature="method#artihmaticArrays#0;class#Main#0" />
             <element signature="method#coinChangeCombinations#0;class#Main#0" />
             <element signature="method#coinChangePermutations#0;class#Main#0" />
+            <element signature="method#binaryStrings#0;class#Main#0" />
           </folding>
         </state>
       </provider>
@@ -453,6 +533,7 @@
             <element signature="method#artihmaticArrays#0;class#Main#0" />
             <element signature="method#coinChangeCombinations#0;class#Main#0" />
             <element signature="method#coinChangePermutations#0;class#Main#0" />
+            <element signature="method#binaryStrings#0;class#Main#0" />
           </folding>
         </state>
       </provider>
@@ -488,6 +569,7 @@
             <element signature="method#artihmaticArrays#0;class#Main#0" />
             <element signature="method#coinChangeCombinations#0;class#Main#0" />
             <element signature="method#coinChangePermutations#0;class#Main#0" />
+            <element signature="method#binaryStrings#0;class#Main#0" />
           </folding>
         </state>
       </provider>
@@ -523,6 +605,7 @@
             <element signature="method#artihmaticArrays#0;class#Main#0" />
             <element signature="method#coinChangeCombinations#0;class#Main#0" />
             <element signature="method#coinChangePermutations#0;class#Main#0" />
+            <element signature="method#binaryStrings#0;class#Main#0" />
           </folding>
         </state>
       </provider>
@@ -558,6 +641,7 @@
             <element signature="method#artihmaticArrays#0;class#Main#0" />
             <element signature="method#coinChangeCombinations#0;class#Main#0" />
             <element signature="method#coinChangePermutations#0;class#Main#0" />
+            <element signature="method#binaryStrings#0;class#Main#0" />
           </folding>
         </state>
       </provider>
@@ -593,6 +677,7 @@
             <element signature="method#artihmaticArrays#0;class#Main#0" />
             <element signature="method#coinChangeCombinations#0;class#Main#0" />
             <element signature="method#coinChangePermutations#0;class#Main#0" />
+            <element signature="method#binaryStrings#0;class#Main#0" />
           </folding>
         </state>
       </provider>
@@ -628,6 +713,7 @@
             <element signature="method#artihmaticArrays#0;class#Main#0" />
             <element signature="method#coinChangeCombinations#0;class#Main#0" />
             <element signature="method#coinChangePermutations#0;class#Main#0" />
+            <element signature="method#binaryStrings#0;class#Main#0" />
           </folding>
         </state>
       </provider>
@@ -663,6 +749,7 @@
             <element signature="method#artihmaticArrays#0;class#Main#0" />
             <element signature="method#coinChangeCombinations#0;class#Main#0" />
             <element signature="method#coinChangePermutations#0;class#Main#0" />
+            <element signature="method#binaryStrings#0;class#Main#0" />
           </folding>
         </state>
       </provider>
@@ -698,6 +785,7 @@
             <element signature="method#artihmaticArrays#0;class#Main#0" />
             <element signature="method#coinChangeCombinations#0;class#Main#0" />
             <element signature="method#coinChangePermutations#0;class#Main#0" />
+            <element signature="method#binaryStrings#0;class#Main#0" />
           </folding>
         </state>
       </provider>
@@ -733,6 +821,7 @@
             <element signature="method#artihmaticArrays#0;class#Main#0" />
             <element signature="method#coinChangeCombinations#0;class#Main#0" />
             <element signature="method#coinChangePermutations#0;class#Main#0" />
+            <element signature="method#binaryStrings#0;class#Main#0" />
           </folding>
         </state>
       </provider>
@@ -768,6 +857,7 @@
             <element signature="method#artihmaticArrays#0;class#Main#0" />
             <element signature="method#coinChangeCombinations#0;class#Main#0" />
             <element signature="method#coinChangePermutations#0;class#Main#0" />
+            <element signature="method#binaryStrings#0;class#Main#0" />
           </folding>
         </state>
       </provider>
@@ -803,6 +893,7 @@
             <element signature="method#artihmaticArrays#0;class#Main#0" />
             <element signature="method#coinChangeCombinations#0;class#Main#0" />
             <element signature="method#coinChangePermutations#0;class#Main#0" />
+            <element signature="method#binaryStrings#0;class#Main#0" />
           </folding>
         </state>
       </provider>
@@ -831,8 +922,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="789" column="134" selection-start-line="789" selection-start-column="134" selection-end-line="789" selection-end-column="134" />
+        <state relative-caret-position="122">
+          <caret line="45" column="46" selection-start-line="45" selection-start-column="46" selection-end-line="45" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#fibonacci#0;class#Main#0" />
@@ -860,6 +951,7 @@
             <element signature="method#artihmaticArrays#0;class#Main#0" />
             <element signature="method#coinChangeCombinations#0;class#Main#0" />
             <element signature="method#coinChangePermutations#0;class#Main#0" />
+            <element signature="method#binaryStrings#0;class#Main#0" />
           </folding>
         </state>
       </provider>

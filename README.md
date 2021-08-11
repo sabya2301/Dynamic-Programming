@@ -19,10 +19,12 @@ Problems in order in the source code ->
 14) Maximum Gold Extraction(2D DP)
 15) Subsets of Array acheiving a target sum
 16) 0-1 Knapsack Problem
-17) Stock Problem 1
-18) Stock Problem 2
-19) Maximum Square Sub-Matrix problem
-20) Make two strings identical(incomplete)
-21) Arithmatic Arrays count
-22) Coin Change Combinations
-23) Coin Change Permutations
+17) Unbounded Knapsack Problem
+18) Stock Problem 1
+19) Stock Problem 2
+20) Maximum Square Sub-Matrix problem
+21) Make two strings identical(incomplete)
+22) Arithmatic Arrays count
+23) Coin Change Combinations
+24) Coin Change Permutations
+25) Binary Strings with non-consecutive '0's

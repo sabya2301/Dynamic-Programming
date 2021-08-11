@@ -43,6 +43,7 @@ public class Main {
 
 //        System.out.println(targetSumSubset(new int[]{4,2,3,1,7}, 4 ));
 //        System.out.println(knapsack0_1(new int[]{2,5,1,3,4}, new int[]{15,14,10,45,30}, 9));
+        System.out.println(unboundedKnapsnack(new int[]{2,5,1,3,4}, new int[]{15,14,10,45,30}, 7));
 
 //        System.out.println(stock_01(new int[]{7,1,5,3,6,4}));
 //        System.out.println(stock_02(new int[]{7,1,5,3,6,4}));
@@ -56,7 +57,7 @@ public class Main {
 //        System.out.println(coinChangeCombinations(new int[]{3, 2 ,5} , 7));
 //        System.out.println(coinChangePermutations(new int[]{3, 2 ,5} , 7));
 
-        System.out.println(binaryStrings(3));
+//        System.out.println(binaryStrings(3));
 
     }
 
@@ -683,9 +684,24 @@ public class Main {
 
 
     }
-
 //-----------------------------------------------------------------------------------
-    // 17) STOCK PROBLEM_1 - Given an array of traded prices, find the maximum profit possible
+    // 17) UNBOUNDED KNAPSACK PROBLEM
+    public static int unboundedKnapsnack(int[] values, int[] weights, int target){
+        int[] dp = new int[target+1];
+        for(int i=0; i<dp.length; ++i){
+            for(int j=0; j<weights.length; ++j){
+                if(i >= values[j])
+                dp[i] = Math.max(dp[i], dp[i- values[j]]+weights[j]);
+            }
+        }
+        for(int ans: dp){
+            System.out.print(ans + " ");
+        }
+        System.out.println();
+        return dp[target];
+    }
+//-----------------------------------------------------------------------------------
+    // 18) STOCK PROBLEM_1 - Given an array of traded prices, find the maximum profit possible
     public static String stock_01(int[] prices){
         int lowestPrice = Integer.MAX_VALUE, maxProfit = Integer.MIN_VALUE, buy = 0, sell = 0;
 
@@ -705,7 +721,7 @@ public class Main {
     }
 
 //-----------------------------------------------------------------------------------
-    // 18) STOCK PROBLEM_2 - Same as above, except now you can do multiple transactions. But you need to buy, sell and then again buy...
+    // 19) STOCK PROBLEM_2 - Same as above, except now you can do multiple transactions. But you need to buy, sell and then again buy...
     public static int stock_02(int[] prices){
         int buyDate=0, sellDate=0, totalProfit=0;
         for(int i=1; i<prices.length; ++i){
@@ -721,7 +737,7 @@ public class Main {
         return totalProfit;
     }
 //-----------------------------------------------------------------------------------
-    // 19) MAX SQUARE SUB MATRIX
+    // 20) MAX SQUARE SUB MATRIX
     public static int maxSquareSubMatrix(int[][] arr){
         int[][] dp = new int[arr.length][arr[0].length];
         int maxSize = 0;
@@ -741,12 +757,12 @@ public class Main {
         return maxSize;
     }
 //-----------------------------------------------------------------------------------
-    // 20) MAKE TWO STRINGS IDENTICAL -> Find the min. cost of making two strings identical, where cost of deleting a character from the string is given.
+    // 21) MAKE TWO STRINGS IDENTICAL -> Find the min. cost of making two strings identical, where cost of deleting a character from the string is given.
     public static void makeStringsIdentical(){
 
     }
 //-----------------------------------------------------------------------------------
-    // 21) COUNT NO. OF ARITHMETIC ARRAYS - Arrays containing atleast 3 elements and forming an AP
+    // 22) COUNT NO. OF ARITHMETIC ARRAYS - Arrays containing atleast 3 elements and forming an AP
     public static int artihmaticArrays(int[] arr){
         int[] dp = new int[arr.length];
         int count=0;
@@ -759,7 +775,7 @@ public class Main {
         return count;
     }
 //-----------------------------------------------------------------------------------
-    // 22) COIN CHANGE COMBINATIONS - Given an unlimited supply of coins, find if a target is achievable
+    // 23) COIN CHANGE COMBINATIONS - Given an unlimited supply of coins, find if a target is achievable
     public static String coinChangeCombinations(int[] coins, int amount){
         int[] dp = new int[amount+1];
         dp[0] = 1;
@@ -774,7 +790,7 @@ public class Main {
         return ("\n"+ dp[amount] + " combinations are possible");
     }
 //-----------------------------------------------------------------------------------
-    // 23) COIN CHANGE PERMUTATIONS
+    // 24) COIN CHANGE PERMUTATIONS
     public static int coinChangePermutations(int[] coins, int amount){
         int[] dp = new int[amount+1];
         dp[0] = 1;
