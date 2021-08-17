@@ -43,7 +43,7 @@ public class Main {
 
 //        System.out.println(targetSumSubset(new int[]{4,2,3,1,7}, 4 ));
 //        System.out.println(knapsack0_1(new int[]{2,5,1,3,4}, new int[]{15,14,10,45,30}, 9));
-        System.out.println(unboundedKnapsnack(new int[]{2,5,1,3,4}, new int[]{15,14,10,45,30}, 7));
+//        System.out.println(unboundedKnapsnack(new int[]{2,5,1,3,4}, new int[]{15,14,10,45,30}, 7));
 
 //        System.out.println(stock_01(new int[]{7,1,5,3,6,4}));
 //        System.out.println(stock_02(new int[]{7,1,5,3,6,4}));
@@ -58,6 +58,7 @@ public class Main {
 //        System.out.println(coinChangePermutations(new int[]{3, 2 ,5} , 7));
 
 //        System.out.println(binaryStrings(3));
+        System.out.println(maxSumNoAdjacent(new int[]{5,10,10,100,5}));
 
     }
 
@@ -815,6 +816,16 @@ public class Main {
         return dp0[n] + dp1[n];
     }
 //-----------------------------------------------------------------------------------
+    // 26) MAX SUM SUBSEQUENCE OF ARRAY WHERE NO TWO ADJACENT ELEMENTS ARE ALLOWED.
+    public static int maxSumNoAdjacent(int[] arr){
+        int included=arr[0], excluded=0;
+        for(int i=1; i<arr.length; ++i){
+            int previousIncluded = included;
+            included = arr[i] + excluded;
+            excluded = Math.max(previousIncluded, excluded);
+        }
+        return Math.max(included, excluded);
+    }
 //-----------------------------------------------------------------------------------
 //-----------------------------------------------------------------------------------
 //-----------------------------------------------------------------------------------
