@@ -29,3 +29,4 @@ Problems in order in the source code ->
 24) Coin Change Permutations
 25) Binary Strings with non-consecutive '0's
 26) Maximum Sum Subsequence in an array without any adjacent elements
+27) Minimum Paint Cost

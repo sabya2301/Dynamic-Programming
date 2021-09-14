@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="30a55ba3-6c87-41c0-9c01-34dd15964c60" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Dynamic-Programming/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Dynamic-Programming/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -18,8 +19,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="343">
-              <caret line="819" column="27" selection-start-line="819" selection-start-column="27" selection-end-line="819" selection-end-column="27" />
+            <state relative-caret-position="153">
+              <caret line="844" column="35" selection-start-line="844" selection-start-column="35" selection-end-line="844" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#fibonacci#0;class#Main#0" />
@@ -36,15 +37,15 @@
                 <element signature="method#russianDoll#0;class#Main#0" />
                 <element signature="method#palindromicSubstringCount#0;class#Main#0" />
                 <element signature="method#leastCostlyPath#0;class#Main#0" />
-                <element signature="e#15899#15911#0" expanded="true" />
+                <element signature="e#16052#16064#0" expanded="true" />
                 <element signature="method#distinctSubstringCount#0;class#Main#0" />
-                <element signature="e#17557#17577#0" expanded="true" />
+                <element signature="e#17710#17730#0" expanded="true" />
                 <element signature="method#goldMineExtract#0;class#Main#0" />
-                <element signature="e#19470#19484#0" expanded="true" />
+                <element signature="e#19623#19637#0" expanded="true" />
                 <element signature="method#targetSumSubset#0;class#Main#0" />
-                <element signature="e#23531#23537#0" expanded="true" />
+                <element signature="e#23684#23690#0" expanded="true" />
                 <element signature="method#knapsack0_1#0;class#Main#0" />
-                <element signature="e#25742#25748#0" expanded="true" />
+                <element signature="e#25895#25901#0" expanded="true" />
                 <element signature="method#unboundedKnapsnack#0;class#Main#0" />
                 <element signature="method#stock_01#0;class#Main#0" />
                 <element signature="method#stock_02#0;class#Main#0" />
@@ -54,6 +55,7 @@
                 <element signature="method#coinChangeCombinations#0;class#Main#0" />
                 <element signature="method#coinChangePermutations#0;class#Main#0" />
                 <element signature="method#binaryStrings#0;class#Main#0" />
+                <element signature="method#maxSumNoAdjacent#0;class#Main#0" />
               </folding>
             </state>
           </provider>
@@ -170,36 +172,36 @@
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="TODO" order="6" />
       <window_info id="Azure Explorer" order="2" />
-      <window_info anchor="right" id="Palette&#9;" order="5" />
-      <window_info id="Image Layers" order="2" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.3290938" />
       <window_info anchor="right" id="Maven Projects" order="4" />
-      <window_info anchor="bottom" id="HDInsight Spark Submission" order="10" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.37360892" />
-      <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="bottom" id="Azure Activity Log" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="12" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.24963397" />
-      <window_info anchor="bottom" id="Remote Spark Job in Cluster" order="13" />
-      <window_info anchor="bottom" id="Debug Remote Spark Job in Cluster" order="14" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
-      <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Messages" order="9" weight="0.3290938" />
+      <window_info anchor="right" id="Palette&#9;" order="5" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="bottom" id="HDInsight Spark Submission" order="10" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.37360892" />
+      <window_info anchor="bottom" id="Terminal" order="12" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.24963397" />
+      <window_info anchor="bottom" id="Remote Spark Job in Cluster" order="13" />
+      <window_info anchor="bottom" id="Debug Remote Spark Job in Cluster" order="14" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3290938" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3290938" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -210,19 +212,19 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>166</line>
+          <line>172</line>
           <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="2" />
+      <option name="time" value="3" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14059">
-          <caret line="827" column="1" selection-start-line="827" selection-start-column="1" selection-end-line="827" selection-end-column="1" />
+        <state relative-caret-position="14076">
+          <caret line="828" column="28" selection-start-line="828" selection-start-column="28" selection-end-line="828" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#fibonacci#0;class#Main#0" />
@@ -239,15 +241,15 @@
             <element signature="method#russianDoll#0;class#Main#0" />
             <element signature="method#palindromicSubstringCount#0;class#Main#0" />
             <element signature="method#leastCostlyPath#0;class#Main#0" />
-            <element signature="e#15899#15911#0" expanded="true" />
+            <element signature="e#16052#16064#0" expanded="true" />
             <element signature="method#distinctSubstringCount#0;class#Main#0" />
-            <element signature="e#17557#17577#0" expanded="true" />
+            <element signature="e#17710#17730#0" expanded="true" />
             <element signature="method#goldMineExtract#0;class#Main#0" />
-            <element signature="e#19470#19484#0" expanded="true" />
+            <element signature="e#19623#19637#0" expanded="true" />
             <element signature="method#targetSumSubset#0;class#Main#0" />
-            <element signature="e#23531#23537#0" expanded="true" />
+            <element signature="e#23684#23690#0" expanded="true" />
             <element signature="method#knapsack0_1#0;class#Main#0" />
-            <element signature="e#25742#25748#0" expanded="true" />
+            <element signature="e#25895#25901#0" expanded="true" />
             <element signature="method#unboundedKnapsnack#0;class#Main#0" />
             <element signature="method#stock_01#0;class#Main#0" />
             <element signature="method#stock_02#0;class#Main#0" />
@@ -257,6 +259,50 @@
             <element signature="method#coinChangeCombinations#0;class#Main#0" />
             <element signature="method#coinChangePermutations#0;class#Main#0" />
             <element signature="method#binaryStrings#0;class#Main#0" />
+            <element signature="method#maxSumNoAdjacent#0;class#Main#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14076">
+          <caret line="828" column="28" lean-forward="true" selection-start-line="828" selection-start-column="28" selection-end-line="828" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#fibonacci#0;class#Main#0" />
+            <element signature="method#climbingStairsRecursion#0;class#Main#0" />
+            <element signature="method#climbingStairsDP#0;class#Main#0" />
+            <element signature="method#climbStairsVariable#0;class#Main#0" />
+            <element signature="method#minStepRequired#0;class#Main#0" />
+            <element signature="method#robHouseRecursion#0;class#Main#0" />
+            <element signature="method#robHousesTopDownApproach#0;class#Main#0" />
+            <element signature="method#longestIncreasingSubsequence#0;class#Main#0" />
+            <element signature="method#longestSumSubsequence#0;class#Main#0" />
+            <element signature="method#longestBitonicSeq#0;class#Main#0" />
+            <element signature="method#nonOverlappingBridges#0;class#Main#0" />
+            <element signature="method#russianDoll#0;class#Main#0" />
+            <element signature="method#palindromicSubstringCount#0;class#Main#0" />
+            <element signature="method#leastCostlyPath#0;class#Main#0" />
+            <element signature="e#16052#16064#0" expanded="true" />
+            <element signature="method#distinctSubstringCount#0;class#Main#0" />
+            <element signature="e#17710#17730#0" expanded="true" />
+            <element signature="method#goldMineExtract#0;class#Main#0" />
+            <element signature="e#19623#19637#0" expanded="true" />
+            <element signature="method#targetSumSubset#0;class#Main#0" />
+            <element signature="e#23684#23690#0" expanded="true" />
+            <element signature="method#knapsack0_1#0;class#Main#0" />
+            <element signature="e#25895#25901#0" expanded="true" />
+            <element signature="method#unboundedKnapsnack#0;class#Main#0" />
+            <element signature="method#stock_01#0;class#Main#0" />
+            <element signature="method#stock_02#0;class#Main#0" />
+            <element signature="method#maxSquareSubMatrix#0;class#Main#0" />
+            <element signature="method#makeStringsIdentical#0;class#Main#0" />
+            <element signature="method#artihmaticArrays#0;class#Main#0" />
+            <element signature="method#coinChangeCombinations#0;class#Main#0" />
+            <element signature="method#coinChangePermutations#0;class#Main#0" />
+            <element signature="method#binaryStrings#0;class#Main#0" />
+            <element signature="method#maxSumNoAdjacent#0;class#Main#0" />
           </folding>
         </state>
       </provider>
@@ -281,15 +327,15 @@
             <element signature="method#russianDoll#0;class#Main#0" />
             <element signature="method#palindromicSubstringCount#0;class#Main#0" />
             <element signature="method#leastCostlyPath#0;class#Main#0" />
-            <element signature="e#15899#15911#0" expanded="true" />
+            <element signature="e#16052#16064#0" expanded="true" />
             <element signature="method#distinctSubstringCount#0;class#Main#0" />
-            <element signature="e#17557#17577#0" expanded="true" />
+            <element signature="e#17710#17730#0" expanded="true" />
             <element signature="method#goldMineExtract#0;class#Main#0" />
-            <element signature="e#19470#19484#0" expanded="true" />
+            <element signature="e#19623#19637#0" expanded="true" />
             <element signature="method#targetSumSubset#0;class#Main#0" />
-            <element signature="e#23531#23537#0" expanded="true" />
+            <element signature="e#23684#23690#0" expanded="true" />
             <element signature="method#knapsack0_1#0;class#Main#0" />
-            <element signature="e#25742#25748#0" expanded="true" />
+            <element signature="e#25895#25901#0" expanded="true" />
             <element signature="method#unboundedKnapsnack#0;class#Main#0" />
             <element signature="method#stock_01#0;class#Main#0" />
             <element signature="method#stock_02#0;class#Main#0" />
@@ -299,6 +345,50 @@
             <element signature="method#coinChangeCombinations#0;class#Main#0" />
             <element signature="method#coinChangePermutations#0;class#Main#0" />
             <element signature="method#binaryStrings#0;class#Main#0" />
+            <element signature="method#maxSumNoAdjacent#0;class#Main#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14059">
+          <caret line="827" column="1" selection-start-line="827" selection-start-column="1" selection-end-line="827" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#fibonacci#0;class#Main#0" />
+            <element signature="method#climbingStairsRecursion#0;class#Main#0" />
+            <element signature="method#climbingStairsDP#0;class#Main#0" />
+            <element signature="method#climbStairsVariable#0;class#Main#0" />
+            <element signature="method#minStepRequired#0;class#Main#0" />
+            <element signature="method#robHouseRecursion#0;class#Main#0" />
+            <element signature="method#robHousesTopDownApproach#0;class#Main#0" />
+            <element signature="method#longestIncreasingSubsequence#0;class#Main#0" />
+            <element signature="method#longestSumSubsequence#0;class#Main#0" />
+            <element signature="method#longestBitonicSeq#0;class#Main#0" />
+            <element signature="method#nonOverlappingBridges#0;class#Main#0" />
+            <element signature="method#russianDoll#0;class#Main#0" />
+            <element signature="method#palindromicSubstringCount#0;class#Main#0" />
+            <element signature="method#leastCostlyPath#0;class#Main#0" />
+            <element signature="e#16052#16064#0" expanded="true" />
+            <element signature="method#distinctSubstringCount#0;class#Main#0" />
+            <element signature="e#17710#17730#0" expanded="true" />
+            <element signature="method#goldMineExtract#0;class#Main#0" />
+            <element signature="e#19623#19637#0" expanded="true" />
+            <element signature="method#targetSumSubset#0;class#Main#0" />
+            <element signature="e#23684#23690#0" expanded="true" />
+            <element signature="method#knapsack0_1#0;class#Main#0" />
+            <element signature="e#25895#25901#0" expanded="true" />
+            <element signature="method#unboundedKnapsnack#0;class#Main#0" />
+            <element signature="method#stock_01#0;class#Main#0" />
+            <element signature="method#stock_02#0;class#Main#0" />
+            <element signature="method#maxSquareSubMatrix#0;class#Main#0" />
+            <element signature="method#makeStringsIdentical#0;class#Main#0" />
+            <element signature="method#artihmaticArrays#0;class#Main#0" />
+            <element signature="method#coinChangeCombinations#0;class#Main#0" />
+            <element signature="method#coinChangePermutations#0;class#Main#0" />
+            <element signature="method#binaryStrings#0;class#Main#0" />
+            <element signature="method#maxSumNoAdjacent#0;class#Main#0" />
           </folding>
         </state>
       </provider>
@@ -323,15 +413,15 @@
             <element signature="method#russianDoll#0;class#Main#0" />
             <element signature="method#palindromicSubstringCount#0;class#Main#0" />
             <element signature="method#leastCostlyPath#0;class#Main#0" />
-            <element signature="e#15899#15911#0" expanded="true" />
+            <element signature="e#16052#16064#0" expanded="true" />
             <element signature="method#distinctSubstringCount#0;class#Main#0" />
-            <element signature="e#17557#17577#0" expanded="true" />
+            <element signature="e#17710#17730#0" expanded="true" />
             <element signature="method#goldMineExtract#0;class#Main#0" />
-            <element signature="e#19470#19484#0" expanded="true" />
+            <element signature="e#19623#19637#0" expanded="true" />
             <element signature="method#targetSumSubset#0;class#Main#0" />
-            <element signature="e#23531#23537#0" expanded="true" />
+            <element signature="e#23684#23690#0" expanded="true" />
             <element signature="method#knapsack0_1#0;class#Main#0" />
-            <element signature="e#25742#25748#0" expanded="true" />
+            <element signature="e#25895#25901#0" expanded="true" />
             <element signature="method#unboundedKnapsnack#0;class#Main#0" />
             <element signature="method#stock_01#0;class#Main#0" />
             <element signature="method#stock_02#0;class#Main#0" />
@@ -341,6 +431,7 @@
             <element signature="method#coinChangeCombinations#0;class#Main#0" />
             <element signature="method#coinChangePermutations#0;class#Main#0" />
             <element signature="method#binaryStrings#0;class#Main#0" />
+            <element signature="method#maxSumNoAdjacent#0;class#Main#0" />
           </folding>
         </state>
       </provider>
@@ -365,15 +456,15 @@
             <element signature="method#russianDoll#0;class#Main#0" />
             <element signature="method#palindromicSubstringCount#0;class#Main#0" />
             <element signature="method#leastCostlyPath#0;class#Main#0" />
-            <element signature="e#15899#15911#0" expanded="true" />
+            <element signature="e#16052#16064#0" expanded="true" />
             <element signature="method#distinctSubstringCount#0;class#Main#0" />
-            <element signature="e#17557#17577#0" expanded="true" />
+            <element signature="e#17710#17730#0" expanded="true" />
             <element signature="method#goldMineExtract#0;class#Main#0" />
-            <element signature="e#19470#19484#0" expanded="true" />
+            <element signature="e#19623#19637#0" expanded="true" />
             <element signature="method#targetSumSubset#0;class#Main#0" />
-            <element signature="e#23531#23537#0" expanded="true" />
+            <element signature="e#23684#23690#0" expanded="true" />
             <element signature="method#knapsack0_1#0;class#Main#0" />
-            <element signature="e#25742#25748#0" expanded="true" />
+            <element signature="e#25895#25901#0" expanded="true" />
             <element signature="method#unboundedKnapsnack#0;class#Main#0" />
             <element signature="method#stock_01#0;class#Main#0" />
             <element signature="method#stock_02#0;class#Main#0" />
@@ -383,6 +474,7 @@
             <element signature="method#coinChangeCombinations#0;class#Main#0" />
             <element signature="method#coinChangePermutations#0;class#Main#0" />
             <element signature="method#binaryStrings#0;class#Main#0" />
+            <element signature="method#maxSumNoAdjacent#0;class#Main#0" />
           </folding>
         </state>
       </provider>
@@ -407,15 +499,15 @@
             <element signature="method#russianDoll#0;class#Main#0" />
             <element signature="method#palindromicSubstringCount#0;class#Main#0" />
             <element signature="method#leastCostlyPath#0;class#Main#0" />
-            <element signature="e#15899#15911#0" expanded="true" />
+            <element signature="e#16052#16064#0" expanded="true" />
             <element signature="method#distinctSubstringCount#0;class#Main#0" />
-            <element signature="e#17557#17577#0" expanded="true" />
+            <element signature="e#17710#17730#0" expanded="true" />
             <element signature="method#goldMineExtract#0;class#Main#0" />
-            <element signature="e#19470#19484#0" expanded="true" />
+            <element signature="e#19623#19637#0" expanded="true" />
             <element signature="method#targetSumSubset#0;class#Main#0" />
-            <element signature="e#23531#23537#0" expanded="true" />
+            <element signature="e#23684#23690#0" expanded="true" />
             <element signature="method#knapsack0_1#0;class#Main#0" />
-            <element signature="e#25742#25748#0" expanded="true" />
+            <element signature="e#25895#25901#0" expanded="true" />
             <element signature="method#unboundedKnapsnack#0;class#Main#0" />
             <element signature="method#stock_01#0;class#Main#0" />
             <element signature="method#stock_02#0;class#Main#0" />
@@ -425,6 +517,7 @@
             <element signature="method#coinChangeCombinations#0;class#Main#0" />
             <element signature="method#coinChangePermutations#0;class#Main#0" />
             <element signature="method#binaryStrings#0;class#Main#0" />
+            <element signature="method#maxSumNoAdjacent#0;class#Main#0" />
           </folding>
         </state>
       </provider>
@@ -449,15 +542,15 @@
             <element signature="method#russianDoll#0;class#Main#0" />
             <element signature="method#palindromicSubstringCount#0;class#Main#0" />
             <element signature="method#leastCostlyPath#0;class#Main#0" />
-            <element signature="e#15899#15911#0" expanded="true" />
+            <element signature="e#16052#16064#0" expanded="true" />
             <element signature="method#distinctSubstringCount#0;class#Main#0" />
-            <element signature="e#17557#17577#0" expanded="true" />
+            <element signature="e#17710#17730#0" expanded="true" />
             <element signature="method#goldMineExtract#0;class#Main#0" />
-            <element signature="e#19470#19484#0" expanded="true" />
+            <element signature="e#19623#19637#0" expanded="true" />
             <element signature="method#targetSumSubset#0;class#Main#0" />
-            <element signature="e#23531#23537#0" expanded="true" />
+            <element signature="e#23684#23690#0" expanded="true" />
             <element signature="method#knapsack0_1#0;class#Main#0" />
-            <element signature="e#25742#25748#0" expanded="true" />
+            <element signature="e#25895#25901#0" expanded="true" />
             <element signature="method#unboundedKnapsnack#0;class#Main#0" />
             <element signature="method#stock_01#0;class#Main#0" />
             <element signature="method#stock_02#0;class#Main#0" />
@@ -467,6 +560,7 @@
             <element signature="method#coinChangeCombinations#0;class#Main#0" />
             <element signature="method#coinChangePermutations#0;class#Main#0" />
             <element signature="method#binaryStrings#0;class#Main#0" />
+            <element signature="method#maxSumNoAdjacent#0;class#Main#0" />
           </folding>
         </state>
       </provider>
@@ -491,15 +585,15 @@
             <element signature="method#russianDoll#0;class#Main#0" />
             <element signature="method#palindromicSubstringCount#0;class#Main#0" />
             <element signature="method#leastCostlyPath#0;class#Main#0" />
-            <element signature="e#15899#15911#0" expanded="true" />
+            <element signature="e#16052#16064#0" expanded="true" />
             <element signature="method#distinctSubstringCount#0;class#Main#0" />
-            <element signature="e#17557#17577#0" expanded="true" />
+            <element signature="e#17710#17730#0" expanded="true" />
             <element signature="method#goldMineExtract#0;class#Main#0" />
-            <element signature="e#19470#19484#0" expanded="true" />
+            <element signature="e#19623#19637#0" expanded="true" />
             <element signature="method#targetSumSubset#0;class#Main#0" />
-            <element signature="e#23531#23537#0" expanded="true" />
+            <element signature="e#23684#23690#0" expanded="true" />
             <element signature="method#knapsack0_1#0;class#Main#0" />
-            <element signature="e#25742#25748#0" expanded="true" />
+            <element signature="e#25895#25901#0" expanded="true" />
             <element signature="method#unboundedKnapsnack#0;class#Main#0" />
             <element signature="method#stock_01#0;class#Main#0" />
             <element signature="method#stock_02#0;class#Main#0" />
@@ -509,6 +603,7 @@
             <element signature="method#coinChangeCombinations#0;class#Main#0" />
             <element signature="method#coinChangePermutations#0;class#Main#0" />
             <element signature="method#binaryStrings#0;class#Main#0" />
+            <element signature="method#maxSumNoAdjacent#0;class#Main#0" />
           </folding>
         </state>
       </provider>
@@ -533,15 +628,15 @@
             <element signature="method#russianDoll#0;class#Main#0" />
             <element signature="method#palindromicSubstringCount#0;class#Main#0" />
             <element signature="method#leastCostlyPath#0;class#Main#0" />
-            <element signature="e#15899#15911#0" expanded="true" />
+            <element signature="e#16052#16064#0" expanded="true" />
             <element signature="method#distinctSubstringCount#0;class#Main#0" />
-            <element signature="e#17557#17577#0" expanded="true" />
+            <element signature="e#17710#17730#0" expanded="true" />
             <element signature="method#goldMineExtract#0;class#Main#0" />
-            <element signature="e#19470#19484#0" expanded="true" />
+            <element signature="e#19623#19637#0" expanded="true" />
             <element signature="method#targetSumSubset#0;class#Main#0" />
-            <element signature="e#23531#23537#0" expanded="true" />
+            <element signature="e#23684#23690#0" expanded="true" />
             <element signature="method#knapsack0_1#0;class#Main#0" />
-            <element signature="e#25742#25748#0" expanded="true" />
+            <element signature="e#25895#25901#0" expanded="true" />
             <element signature="method#unboundedKnapsnack#0;class#Main#0" />
             <element signature="method#stock_01#0;class#Main#0" />
             <element signature="method#stock_02#0;class#Main#0" />
@@ -551,6 +646,7 @@
             <element signature="method#coinChangeCombinations#0;class#Main#0" />
             <element signature="method#coinChangePermutations#0;class#Main#0" />
             <element signature="method#binaryStrings#0;class#Main#0" />
+            <element signature="method#maxSumNoAdjacent#0;class#Main#0" />
           </folding>
         </state>
       </provider>
@@ -575,15 +671,15 @@
             <element signature="method#russianDoll#0;class#Main#0" />
             <element signature="method#palindromicSubstringCount#0;class#Main#0" />
             <element signature="method#leastCostlyPath#0;class#Main#0" />
-            <element signature="e#15899#15911#0" expanded="true" />
+            <element signature="e#16052#16064#0" expanded="true" />
             <element signature="method#distinctSubstringCount#0;class#Main#0" />
-            <element signature="e#17557#17577#0" expanded="true" />
+            <element signature="e#17710#17730#0" expanded="true" />
             <element signature="method#goldMineExtract#0;class#Main#0" />
-            <element signature="e#19470#19484#0" expanded="true" />
+            <element signature="e#19623#19637#0" expanded="true" />
             <element signature="method#targetSumSubset#0;class#Main#0" />
-            <element signature="e#23531#23537#0" expanded="true" />
+            <element signature="e#23684#23690#0" expanded="true" />
             <element signature="method#knapsack0_1#0;class#Main#0" />
-            <element signature="e#25742#25748#0" expanded="true" />
+            <element signature="e#25895#25901#0" expanded="true" />
             <element signature="method#unboundedKnapsnack#0;class#Main#0" />
             <element signature="method#stock_01#0;class#Main#0" />
             <element signature="method#stock_02#0;class#Main#0" />
@@ -593,6 +689,7 @@
             <element signature="method#coinChangeCombinations#0;class#Main#0" />
             <element signature="method#coinChangePermutations#0;class#Main#0" />
             <element signature="method#binaryStrings#0;class#Main#0" />
+            <element signature="method#maxSumNoAdjacent#0;class#Main#0" />
           </folding>
         </state>
       </provider>
@@ -617,15 +714,15 @@
             <element signature="method#russianDoll#0;class#Main#0" />
             <element signature="method#palindromicSubstringCount#0;class#Main#0" />
             <element signature="method#leastCostlyPath#0;class#Main#0" />
-            <element signature="e#15899#15911#0" expanded="true" />
+            <element signature="e#16052#16064#0" expanded="true" />
             <element signature="method#distinctSubstringCount#0;class#Main#0" />
-            <element signature="e#17557#17577#0" expanded="true" />
+            <element signature="e#17710#17730#0" expanded="true" />
             <element signature="method#goldMineExtract#0;class#Main#0" />
-            <element signature="e#19470#19484#0" expanded="true" />
+            <element signature="e#19623#19637#0" expanded="true" />
             <element signature="method#targetSumSubset#0;class#Main#0" />
-            <element signature="e#23531#23537#0" expanded="true" />
+            <element signature="e#23684#23690#0" expanded="true" />
             <element signature="method#knapsack0_1#0;class#Main#0" />
-            <element signature="e#25742#25748#0" expanded="true" />
+            <element signature="e#25895#25901#0" expanded="true" />
             <element signature="method#unboundedKnapsnack#0;class#Main#0" />
             <element signature="method#stock_01#0;class#Main#0" />
             <element signature="method#stock_02#0;class#Main#0" />
@@ -635,6 +732,7 @@
             <element signature="method#coinChangeCombinations#0;class#Main#0" />
             <element signature="method#coinChangePermutations#0;class#Main#0" />
             <element signature="method#binaryStrings#0;class#Main#0" />
+            <element signature="method#maxSumNoAdjacent#0;class#Main#0" />
           </folding>
         </state>
       </provider>
@@ -659,15 +757,15 @@
             <element signature="method#russianDoll#0;class#Main#0" />
             <element signature="method#palindromicSubstringCount#0;class#Main#0" />
             <element signature="method#leastCostlyPath#0;class#Main#0" />
-            <element signature="e#15899#15911#0" expanded="true" />
+            <element signature="e#16052#16064#0" expanded="true" />
             <element signature="method#distinctSubstringCount#0;class#Main#0" />
-            <element signature="e#17557#17577#0" expanded="true" />
+            <element signature="e#17710#17730#0" expanded="true" />
             <element signature="method#goldMineExtract#0;class#Main#0" />
-            <element signature="e#19470#19484#0" expanded="true" />
+            <element signature="e#19623#19637#0" expanded="true" />
             <element signature="method#targetSumSubset#0;class#Main#0" />
-            <element signature="e#23531#23537#0" expanded="true" />
+            <element signature="e#23684#23690#0" expanded="true" />
             <element signature="method#knapsack0_1#0;class#Main#0" />
-            <element signature="e#25742#25748#0" expanded="true" />
+            <element signature="e#25895#25901#0" expanded="true" />
             <element signature="method#unboundedKnapsnack#0;class#Main#0" />
             <element signature="method#stock_01#0;class#Main#0" />
             <element signature="method#stock_02#0;class#Main#0" />
@@ -677,6 +775,7 @@
             <element signature="method#coinChangeCombinations#0;class#Main#0" />
             <element signature="method#coinChangePermutations#0;class#Main#0" />
             <element signature="method#binaryStrings#0;class#Main#0" />
+            <element signature="method#maxSumNoAdjacent#0;class#Main#0" />
           </folding>
         </state>
       </provider>
@@ -701,15 +800,15 @@
             <element signature="method#russianDoll#0;class#Main#0" />
             <element signature="method#palindromicSubstringCount#0;class#Main#0" />
             <element signature="method#leastCostlyPath#0;class#Main#0" />
-            <element signature="e#15899#15911#0" expanded="true" />
+            <element signature="e#16052#16064#0" expanded="true" />
             <element signature="method#distinctSubstringCount#0;class#Main#0" />
-            <element signature="e#17557#17577#0" expanded="true" />
+            <element signature="e#17710#17730#0" expanded="true" />
             <element signature="method#goldMineExtract#0;class#Main#0" />
-            <element signature="e#19470#19484#0" expanded="true" />
+            <element signature="e#19623#19637#0" expanded="true" />
             <element signature="method#targetSumSubset#0;class#Main#0" />
-            <element signature="e#23531#23537#0" expanded="true" />
+            <element signature="e#23684#23690#0" expanded="true" />
             <element signature="method#knapsack0_1#0;class#Main#0" />
-            <element signature="e#25742#25748#0" expanded="true" />
+            <element signature="e#25895#25901#0" expanded="true" />
             <element signature="method#unboundedKnapsnack#0;class#Main#0" />
             <element signature="method#stock_01#0;class#Main#0" />
             <element signature="method#stock_02#0;class#Main#0" />
@@ -719,6 +818,7 @@
             <element signature="method#coinChangeCombinations#0;class#Main#0" />
             <element signature="method#coinChangePermutations#0;class#Main#0" />
             <element signature="method#binaryStrings#0;class#Main#0" />
+            <element signature="method#maxSumNoAdjacent#0;class#Main#0" />
           </folding>
         </state>
       </provider>
@@ -743,15 +843,15 @@
             <element signature="method#russianDoll#0;class#Main#0" />
             <element signature="method#palindromicSubstringCount#0;class#Main#0" />
             <element signature="method#leastCostlyPath#0;class#Main#0" />
-            <element signature="e#15899#15911#0" expanded="true" />
+            <element signature="e#16052#16064#0" expanded="true" />
             <element signature="method#distinctSubstringCount#0;class#Main#0" />
-            <element signature="e#17557#17577#0" expanded="true" />
+            <element signature="e#17710#17730#0" expanded="true" />
             <element signature="method#goldMineExtract#0;class#Main#0" />
-            <element signature="e#19470#19484#0" expanded="true" />
+            <element signature="e#19623#19637#0" expanded="true" />
             <element signature="method#targetSumSubset#0;class#Main#0" />
-            <element signature="e#23531#23537#0" expanded="true" />
+            <element signature="e#23684#23690#0" expanded="true" />
             <element signature="method#knapsack0_1#0;class#Main#0" />
-            <element signature="e#25742#25748#0" expanded="true" />
+            <element signature="e#25895#25901#0" expanded="true" />
             <element signature="method#unboundedKnapsnack#0;class#Main#0" />
             <element signature="method#stock_01#0;class#Main#0" />
             <element signature="method#stock_02#0;class#Main#0" />
@@ -761,6 +861,7 @@
             <element signature="method#coinChangeCombinations#0;class#Main#0" />
             <element signature="method#coinChangePermutations#0;class#Main#0" />
             <element signature="method#binaryStrings#0;class#Main#0" />
+            <element signature="method#maxSumNoAdjacent#0;class#Main#0" />
           </folding>
         </state>
       </provider>
@@ -785,15 +886,15 @@
             <element signature="method#russianDoll#0;class#Main#0" />
             <element signature="method#palindromicSubstringCount#0;class#Main#0" />
             <element signature="method#leastCostlyPath#0;class#Main#0" />
-            <element signature="e#15899#15911#0" expanded="true" />
+            <element signature="e#16052#16064#0" expanded="true" />
             <element signature="method#distinctSubstringCount#0;class#Main#0" />
-            <element signature="e#17557#17577#0" expanded="true" />
+            <element signature="e#17710#17730#0" expanded="true" />
             <element signature="method#goldMineExtract#0;class#Main#0" />
-            <element signature="e#19470#19484#0" expanded="true" />
+            <element signature="e#19623#19637#0" expanded="true" />
             <element signature="method#targetSumSubset#0;class#Main#0" />
-            <element signature="e#23531#23537#0" expanded="true" />
+            <element signature="e#23684#23690#0" expanded="true" />
             <element signature="method#knapsack0_1#0;class#Main#0" />
-            <element signature="e#25742#25748#0" expanded="true" />
+            <element signature="e#25895#25901#0" expanded="true" />
             <element signature="method#unboundedKnapsnack#0;class#Main#0" />
             <element signature="method#stock_01#0;class#Main#0" />
             <element signature="method#stock_02#0;class#Main#0" />
@@ -803,6 +904,7 @@
             <element signature="method#coinChangeCombinations#0;class#Main#0" />
             <element signature="method#coinChangePermutations#0;class#Main#0" />
             <element signature="method#binaryStrings#0;class#Main#0" />
+            <element signature="method#maxSumNoAdjacent#0;class#Main#0" />
           </folding>
         </state>
       </provider>
@@ -827,15 +929,15 @@
             <element signature="method#russianDoll#0;class#Main#0" />
             <element signature="method#palindromicSubstringCount#0;class#Main#0" />
             <element signature="method#leastCostlyPath#0;class#Main#0" />
-            <element signature="e#15899#15911#0" expanded="true" />
+            <element signature="e#16052#16064#0" expanded="true" />
             <element signature="method#distinctSubstringCount#0;class#Main#0" />
-            <element signature="e#17557#17577#0" expanded="true" />
+            <element signature="e#17710#17730#0" expanded="true" />
             <element signature="method#goldMineExtract#0;class#Main#0" />
-            <element signature="e#19470#19484#0" expanded="true" />
+            <element signature="e#19623#19637#0" expanded="true" />
             <element signature="method#targetSumSubset#0;class#Main#0" />
-            <element signature="e#23531#23537#0" expanded="true" />
+            <element signature="e#23684#23690#0" expanded="true" />
             <element signature="method#knapsack0_1#0;class#Main#0" />
-            <element signature="e#25742#25748#0" expanded="true" />
+            <element signature="e#25895#25901#0" expanded="true" />
             <element signature="method#unboundedKnapsnack#0;class#Main#0" />
             <element signature="method#stock_01#0;class#Main#0" />
             <element signature="method#stock_02#0;class#Main#0" />
@@ -845,6 +947,7 @@
             <element signature="method#coinChangeCombinations#0;class#Main#0" />
             <element signature="method#coinChangePermutations#0;class#Main#0" />
             <element signature="method#binaryStrings#0;class#Main#0" />
+            <element signature="method#maxSumNoAdjacent#0;class#Main#0" />
           </folding>
         </state>
       </provider>
@@ -869,15 +972,15 @@
             <element signature="method#russianDoll#0;class#Main#0" />
             <element signature="method#palindromicSubstringCount#0;class#Main#0" />
             <element signature="method#leastCostlyPath#0;class#Main#0" />
-            <element signature="e#15899#15911#0" expanded="true" />
+            <element signature="e#16052#16064#0" expanded="true" />
             <element signature="method#distinctSubstringCount#0;class#Main#0" />
-            <element signature="e#17557#17577#0" expanded="true" />
+            <element signature="e#17710#17730#0" expanded="true" />
             <element signature="method#goldMineExtract#0;class#Main#0" />
-            <element signature="e#19470#19484#0" expanded="true" />
+            <element signature="e#19623#19637#0" expanded="true" />
             <element signature="method#targetSumSubset#0;class#Main#0" />
-            <element signature="e#23531#23537#0" expanded="true" />
+            <element signature="e#23684#23690#0" expanded="true" />
             <element signature="method#knapsack0_1#0;class#Main#0" />
-            <element signature="e#25742#25748#0" expanded="true" />
+            <element signature="e#25895#25901#0" expanded="true" />
             <element signature="method#unboundedKnapsnack#0;class#Main#0" />
             <element signature="method#stock_01#0;class#Main#0" />
             <element signature="method#stock_02#0;class#Main#0" />
@@ -887,6 +990,7 @@
             <element signature="method#coinChangeCombinations#0;class#Main#0" />
             <element signature="method#coinChangePermutations#0;class#Main#0" />
             <element signature="method#binaryStrings#0;class#Main#0" />
+            <element signature="method#maxSumNoAdjacent#0;class#Main#0" />
           </folding>
         </state>
       </provider>
@@ -911,15 +1015,15 @@
             <element signature="method#russianDoll#0;class#Main#0" />
             <element signature="method#palindromicSubstringCount#0;class#Main#0" />
             <element signature="method#leastCostlyPath#0;class#Main#0" />
-            <element signature="e#15899#15911#0" expanded="true" />
+            <element signature="e#16052#16064#0" expanded="true" />
             <element signature="method#distinctSubstringCount#0;class#Main#0" />
-            <element signature="e#17557#17577#0" expanded="true" />
+            <element signature="e#17710#17730#0" expanded="true" />
             <element signature="method#goldMineExtract#0;class#Main#0" />
-            <element signature="e#19470#19484#0" expanded="true" />
+            <element signature="e#19623#19637#0" expanded="true" />
             <element signature="method#targetSumSubset#0;class#Main#0" />
-            <element signature="e#23531#23537#0" expanded="true" />
+            <element signature="e#23684#23690#0" expanded="true" />
             <element signature="method#knapsack0_1#0;class#Main#0" />
-            <element signature="e#25742#25748#0" expanded="true" />
+            <element signature="e#25895#25901#0" expanded="true" />
             <element signature="method#unboundedKnapsnack#0;class#Main#0" />
             <element signature="method#stock_01#0;class#Main#0" />
             <element signature="method#stock_02#0;class#Main#0" />
@@ -929,6 +1033,7 @@
             <element signature="method#coinChangeCombinations#0;class#Main#0" />
             <element signature="method#coinChangePermutations#0;class#Main#0" />
             <element signature="method#binaryStrings#0;class#Main#0" />
+            <element signature="method#maxSumNoAdjacent#0;class#Main#0" />
           </folding>
         </state>
       </provider>
@@ -953,15 +1058,15 @@
             <element signature="method#russianDoll#0;class#Main#0" />
             <element signature="method#palindromicSubstringCount#0;class#Main#0" />
             <element signature="method#leastCostlyPath#0;class#Main#0" />
-            <element signature="e#15899#15911#0" expanded="true" />
+            <element signature="e#16052#16064#0" expanded="true" />
             <element signature="method#distinctSubstringCount#0;class#Main#0" />
-            <element signature="e#17557#17577#0" expanded="true" />
+            <element signature="e#17710#17730#0" expanded="true" />
             <element signature="method#goldMineExtract#0;class#Main#0" />
-            <element signature="e#19470#19484#0" expanded="true" />
+            <element signature="e#19623#19637#0" expanded="true" />
             <element signature="method#targetSumSubset#0;class#Main#0" />
-            <element signature="e#23531#23537#0" expanded="true" />
+            <element signature="e#23684#23690#0" expanded="true" />
             <element signature="method#knapsack0_1#0;class#Main#0" />
-            <element signature="e#25742#25748#0" expanded="true" />
+            <element signature="e#25895#25901#0" expanded="true" />
             <element signature="method#unboundedKnapsnack#0;class#Main#0" />
             <element signature="method#stock_01#0;class#Main#0" />
             <element signature="method#stock_02#0;class#Main#0" />
@@ -971,6 +1076,7 @@
             <element signature="method#coinChangeCombinations#0;class#Main#0" />
             <element signature="method#coinChangePermutations#0;class#Main#0" />
             <element signature="method#binaryStrings#0;class#Main#0" />
+            <element signature="method#maxSumNoAdjacent#0;class#Main#0" />
           </folding>
         </state>
       </provider>
@@ -995,15 +1101,15 @@
             <element signature="method#russianDoll#0;class#Main#0" />
             <element signature="method#palindromicSubstringCount#0;class#Main#0" />
             <element signature="method#leastCostlyPath#0;class#Main#0" />
-            <element signature="e#15899#15911#0" expanded="true" />
+            <element signature="e#16052#16064#0" expanded="true" />
             <element signature="method#distinctSubstringCount#0;class#Main#0" />
-            <element signature="e#17557#17577#0" expanded="true" />
+            <element signature="e#17710#17730#0" expanded="true" />
             <element signature="method#goldMineExtract#0;class#Main#0" />
-            <element signature="e#19470#19484#0" expanded="true" />
+            <element signature="e#19623#19637#0" expanded="true" />
             <element signature="method#targetSumSubset#0;class#Main#0" />
-            <element signature="e#23531#23537#0" expanded="true" />
+            <element signature="e#23684#23690#0" expanded="true" />
             <element signature="method#knapsack0_1#0;class#Main#0" />
-            <element signature="e#25742#25748#0" expanded="true" />
+            <element signature="e#25895#25901#0" expanded="true" />
             <element signature="method#unboundedKnapsnack#0;class#Main#0" />
             <element signature="method#stock_01#0;class#Main#0" />
             <element signature="method#stock_02#0;class#Main#0" />
@@ -1013,6 +1119,7 @@
             <element signature="method#coinChangeCombinations#0;class#Main#0" />
             <element signature="method#coinChangePermutations#0;class#Main#0" />
             <element signature="method#binaryStrings#0;class#Main#0" />
+            <element signature="method#maxSumNoAdjacent#0;class#Main#0" />
           </folding>
         </state>
       </provider>
@@ -1037,15 +1144,15 @@
             <element signature="method#russianDoll#0;class#Main#0" />
             <element signature="method#palindromicSubstringCount#0;class#Main#0" />
             <element signature="method#leastCostlyPath#0;class#Main#0" />
-            <element signature="e#15899#15911#0" expanded="true" />
+            <element signature="e#16052#16064#0" expanded="true" />
             <element signature="method#distinctSubstringCount#0;class#Main#0" />
-            <element signature="e#17557#17577#0" expanded="true" />
+            <element signature="e#17710#17730#0" expanded="true" />
             <element signature="method#goldMineExtract#0;class#Main#0" />
-            <element signature="e#19470#19484#0" expanded="true" />
+            <element signature="e#19623#19637#0" expanded="true" />
             <element signature="method#targetSumSubset#0;class#Main#0" />
-            <element signature="e#23531#23537#0" expanded="true" />
+            <element signature="e#23684#23690#0" expanded="true" />
             <element signature="method#knapsack0_1#0;class#Main#0" />
-            <element signature="e#25742#25748#0" expanded="true" />
+            <element signature="e#25895#25901#0" expanded="true" />
             <element signature="method#unboundedKnapsnack#0;class#Main#0" />
             <element signature="method#stock_01#0;class#Main#0" />
             <element signature="method#stock_02#0;class#Main#0" />
@@ -1055,6 +1162,7 @@
             <element signature="method#coinChangeCombinations#0;class#Main#0" />
             <element signature="method#coinChangePermutations#0;class#Main#0" />
             <element signature="method#binaryStrings#0;class#Main#0" />
+            <element signature="method#maxSumNoAdjacent#0;class#Main#0" />
           </folding>
         </state>
       </provider>
@@ -1079,15 +1187,15 @@
             <element signature="method#russianDoll#0;class#Main#0" />
             <element signature="method#palindromicSubstringCount#0;class#Main#0" />
             <element signature="method#leastCostlyPath#0;class#Main#0" />
-            <element signature="e#15899#15911#0" expanded="true" />
+            <element signature="e#16052#16064#0" expanded="true" />
             <element signature="method#distinctSubstringCount#0;class#Main#0" />
-            <element signature="e#17557#17577#0" expanded="true" />
+            <element signature="e#17710#17730#0" expanded="true" />
             <element signature="method#goldMineExtract#0;class#Main#0" />
-            <element signature="e#19470#19484#0" expanded="true" />
+            <element signature="e#19623#19637#0" expanded="true" />
             <element signature="method#targetSumSubset#0;class#Main#0" />
-            <element signature="e#23531#23537#0" expanded="true" />
+            <element signature="e#23684#23690#0" expanded="true" />
             <element signature="method#knapsack0_1#0;class#Main#0" />
-            <element signature="e#25742#25748#0" expanded="true" />
+            <element signature="e#25895#25901#0" expanded="true" />
             <element signature="method#unboundedKnapsnack#0;class#Main#0" />
             <element signature="method#stock_01#0;class#Main#0" />
             <element signature="method#stock_02#0;class#Main#0" />
@@ -1097,6 +1205,7 @@
             <element signature="method#coinChangeCombinations#0;class#Main#0" />
             <element signature="method#coinChangePermutations#0;class#Main#0" />
             <element signature="method#binaryStrings#0;class#Main#0" />
+            <element signature="method#maxSumNoAdjacent#0;class#Main#0" />
           </folding>
         </state>
       </provider>
@@ -1121,15 +1230,15 @@
             <element signature="method#russianDoll#0;class#Main#0" />
             <element signature="method#palindromicSubstringCount#0;class#Main#0" />
             <element signature="method#leastCostlyPath#0;class#Main#0" />
-            <element signature="e#15899#15911#0" expanded="true" />
+            <element signature="e#16052#16064#0" expanded="true" />
             <element signature="method#distinctSubstringCount#0;class#Main#0" />
-            <element signature="e#17557#17577#0" expanded="true" />
+            <element signature="e#17710#17730#0" expanded="true" />
             <element signature="method#goldMineExtract#0;class#Main#0" />
-            <element signature="e#19470#19484#0" expanded="true" />
+            <element signature="e#19623#19637#0" expanded="true" />
             <element signature="method#targetSumSubset#0;class#Main#0" />
-            <element signature="e#23531#23537#0" expanded="true" />
+            <element signature="e#23684#23690#0" expanded="true" />
             <element signature="method#knapsack0_1#0;class#Main#0" />
-            <element signature="e#25742#25748#0" expanded="true" />
+            <element signature="e#25895#25901#0" expanded="true" />
             <element signature="method#unboundedKnapsnack#0;class#Main#0" />
             <element signature="method#stock_01#0;class#Main#0" />
             <element signature="method#stock_02#0;class#Main#0" />
@@ -1139,6 +1248,7 @@
             <element signature="method#coinChangeCombinations#0;class#Main#0" />
             <element signature="method#coinChangePermutations#0;class#Main#0" />
             <element signature="method#binaryStrings#0;class#Main#0" />
+            <element signature="method#maxSumNoAdjacent#0;class#Main#0" />
           </folding>
         </state>
       </provider>
@@ -1167,8 +1277,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="819" column="27" selection-start-line="819" selection-start-column="27" selection-end-line="819" selection-end-column="27" />
+        <state relative-caret-position="153">
+          <caret line="844" column="35" selection-start-line="844" selection-start-column="35" selection-end-line="844" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#fibonacci#0;class#Main#0" />
@@ -1185,15 +1295,15 @@
             <element signature="method#russianDoll#0;class#Main#0" />
             <element signature="method#palindromicSubstringCount#0;class#Main#0" />
             <element signature="method#leastCostlyPath#0;class#Main#0" />
-            <element signature="e#15899#15911#0" expanded="true" />
+            <element signature="e#16052#16064#0" expanded="true" />
             <element signature="method#distinctSubstringCount#0;class#Main#0" />
-            <element signature="e#17557#17577#0" expanded="true" />
+            <element signature="e#17710#17730#0" expanded="true" />
             <element signature="method#goldMineExtract#0;class#Main#0" />
-            <element signature="e#19470#19484#0" expanded="true" />
+            <element signature="e#19623#19637#0" expanded="true" />
             <element signature="method#targetSumSubset#0;class#Main#0" />
-            <element signature="e#23531#23537#0" expanded="true" />
+            <element signature="e#23684#23690#0" expanded="true" />
             <element signature="method#knapsack0_1#0;class#Main#0" />
-            <element signature="e#25742#25748#0" expanded="true" />
+            <element signature="e#25895#25901#0" expanded="true" />
             <element signature="method#unboundedKnapsnack#0;class#Main#0" />
             <element signature="method#stock_01#0;class#Main#0" />
             <element signature="method#stock_02#0;class#Main#0" />
@@ -1203,6 +1313,7 @@
             <element signature="method#coinChangeCombinations#0;class#Main#0" />
             <element signature="method#coinChangePermutations#0;class#Main#0" />
             <element signature="method#binaryStrings#0;class#Main#0" />
+            <element signature="method#maxSumNoAdjacent#0;class#Main#0" />
           </folding>
         </state>
       </provider>
